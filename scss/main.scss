@@ -1,0 +1,10 @@
+/* 1. Variables & overrides */
+@import "variables";
+
+/* 2. Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* 3. Site styles */
+@import "layout";
+@import "components";
+@import "pages";
