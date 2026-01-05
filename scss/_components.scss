@@ -1,0 +1,8 @@
+.btn-book {
+  background-color: $secondary;
+  color: white;
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+  }
+}
