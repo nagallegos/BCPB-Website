@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add-Ons | Bomb City Photo Booth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="./index.html">
+      <img src="./images/logos/BCPB-logo.svg" alt="Bomb City Photo Booth Logo" height="40" width="40"/>
+      Bomb City Photo Booth
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="./packages.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="./booth.html">Photo Booth</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Add-Ons</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="./addons.html">Overview</a></li>
+            <li><a class="dropdown-item" href="./addons/backdrops.html">Backdrops</a></li>
+            <li><a class="dropdown-item" href="./addons/props.html">Props</a></li>
+            <li><a class="dropdown-item" href="./addons/printer.html">Printer</a></li>
+            <li><a class="dropdown-item" href="./addons/digital-frames.html">Digital Frames</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn btn-danger btn-book" href="./contact.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero text-black text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold mb-3">Add-Ons Overview</h1>
+    <p class="lead">Enhance your photo booth experience with our customizable add-ons.</p>
+  </div>
+</section>
+
+<!-- ================= BASE PRICE ================= -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Base Rental Price</h2>
+    <p class="mb-3">Our standard photo booth rental starts at <strong>$400 for 3 hours</strong> including:</p>
+    <ul class="list-unstyled mb-4">
+      <li>3 hours of service</li>
+      <li>Booth with DSLR camera</li>
+      <li>Backdrop</li>
+      <li>Lighting</li>
+      <li>Setup and tear down</li>
+      <li>Digital sharing</li>
+      <li>On-site attendant</li>
+      <li>Delivery within 40 mile</li>
+      <li>Host recieves digital copy of all photos following event</li>
+    </ul>
+    <a href="./contact.html" class="btn btn-danger btn-lg">Book Now</a>
+  </div>
+</section>
+
+<!-- ================= ADD-ONS GRID ================= -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-center">Our Add-Ons</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+      <!-- Backdrops -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Backdrops</h5>
+            <p class="card-text">Included with all packages</p>
+            <a href="./addons/backdrops.html" class="btn btn-primary btn-book">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Props -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Props</h5>
+            <p class="card-text">Starting at $25</p>
+            <a href="./addons/props.html" class="btn btn-primary btn-book">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Printer -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Printer</h5>
+            <p class="card-text">Starting at $150</p>
+            <a href="./addons/printer.html" class="btn btn-primary btn-book">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Frames -->
+      <div class="col">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Digital Frames</h5>
+            <p class="card-text">Starting at $25</p>
+            <a href="./addons/digital-frames.html" class="btn btn-primary btn-book">More Info</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-4">
+  <div class="container text-center small">
+    <p class="mb-1">&copy; <span id="year"></span> Bomb City Photo Booth, LLC</p>
+    <p class="mb-0">
+      Amarillo, TX ·
+      <a href="mailto:nick.gallegos@bombcityphotobooth.com" class="text-white">nick.gallegos@bombcityphotobooth.com</a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
