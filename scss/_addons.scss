@@ -1,0 +1,94 @@
+// ========================
+// Add-Ons Page Styles
+// ========================
+
+$text-color: #000000; // black
+$primary-color: #1f2937; // dark gray
+$secondary-color: #f3f4f6; // light gray
+
+
+// Hero sections for Add-On pages
+.hero {
+  text-align: center;
+  color: $text-color; // black hero text
+  padding: 6rem 0;
+  background-color: $secondary-color;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p.lead {
+    font-size: 1.25rem;
+  }
+}
+
+// Content sections
+section.py-5 {
+  .container {
+    .row {
+      .col-md-6 {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 0.5rem;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        ul {
+          list-style-type: disc;
+          margin-left: 1rem;
+          li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CTA Section
+section.bg-light.text-center {
+  h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .btn-book {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    background-color: $primary-color;
+    border: none;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+// Responsive tweaks
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  section.py-5 .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}

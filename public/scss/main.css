@@ -12040,5 +12040,75 @@ section.bg-light.text-center .btn-book:hover {
     gap: 1.5rem;
   }
 }
+/* 6. Portfolio Page Styles */
+.hero {
+  text-align: center;
+  color: #000000;
+  padding: 6rem 0;
+  background-color: #f3f4f6;
+}
+.hero h1, .hero .h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero p.lead {
+  font-size: 1.25rem;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.portfolio-gallery .portfolio-item {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.portfolio-gallery .portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.portfolio-gallery .portfolio-item img:hover {
+  transform: scale(1.05);
+}
+
+section.bg-light.text-center h2, section.bg-light.text-center .h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+section.bg-light.text-center p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+section.bg-light.text-center .btn-book {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  background-color: #1f2937;
+  border: none;
+}
+section.bg-light.text-center .btn-book:hover {
+  background-color: rgb(12.6162790698, 16.6860465116, 22.3837209302);
+}
+section.bg-light.text-center .btn-portfolio-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  background-color: #343a40;
+}
+section.bg-light.text-center .btn-portfolio-link:hover {
+  background-color: rgb(29.1379310345, 32.5, 35.8620689655);
+}
+
+@media (max-width: 768px) {
+  .hero h1, .hero .h1 {
+    font-size: 2.2rem;
+  }
+  .portfolio-gallery {
+    gap: 1rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

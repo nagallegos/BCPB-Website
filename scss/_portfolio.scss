@@ -1,0 +1,87 @@
+// ========================
+// Portfolio Page Styles
+// ========================
+
+// Hero Section
+.hero {
+  text-align: center;
+  color: $text-color;
+  padding: 6rem 0;
+  background-color: $secondary-color;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p.lead {
+    font-size: 1.25rem;
+  }
+}
+
+// Portfolio Gallery
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  .portfolio-item {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// CTA Section
+section.bg-light.text-center {
+  h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-book {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    background-color: $primary-color;
+    border: none;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .btn-portfolio-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    background-color: #343a40;
+    &:hover {
+      background-color: darken(#343a40, 10%);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-gallery {
+    gap: 1rem;
+  }
+}
