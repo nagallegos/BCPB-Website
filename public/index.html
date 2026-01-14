@@ -1,242 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Bomb City Photo Booth</title>
-  <!-- Favicon link goes here -->
-  <link rel="icon" href="./images/logos/BCPB-logo.svg" type="image/svg+xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bomb City Photo Booth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Compiled SCSS -->
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
 
-  <!-- Optional Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  >
-</head>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
 
-<body>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="sticky-top"></div>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="./index.html">
-      <img src="./images/logos/BCPB-logo.svg" alt="Bomb City Photo Booth Logo" height="40" width="40"/>
-      Bomb City Photo Booth
-    </a>
+    <!-- HERO -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h1 class="mb-3">Modern Photo Booth Rentals in Amarillo</h1>
+        <p class="lead text-muted-custom mb-4">
+          Sleek, fun, and unforgettable experiences for weddings, parties, and
+          events.
+        </p>
+        <a href="/contact.html" class="btn btn-brand btn-lg"> Book Now </a>
+      </div>
+    </section>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div id="mainNav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item">
-          <a class="nav-link" href="./packages.html">Packages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./booth.html">Photo Booth</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-            Add-Ons
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./addons.html">Overview</a></li>
-            <li><a class="dropdown-item" href="./addons/backdrops.html">Backdrops</a></li>
-            <li><a class="dropdown-item" href="./addons/props.html">Props</a></li>
-            <li><a class="dropdown-item" href="./addons/printer.html">Printer</a></li>
-            <li><a class="dropdown-item" href="./addons/digital-frames.html">Digital Frames</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="./portfolio.html">Portfolio</a>
-        </li>
-
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-danger btn-book" href="./contact.html">
-            Book Now
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- ================= HERO ================= -->
-<section class="hero text-black text-center">
-  <div class="container">
-    <h1 class="display-4 fw-bold mb-3">
-      Capture the Moment.  
-      <br class="d-none d-md-block">
-      Bring the Fun.
-    </h1>
-
-    <p class="lead mb-4">
-      Premium photo booth rentals for weddings, parties, corporate events,
-      and celebrations across the Texas Panhandle.
-    </p>
-
-    <a href="./contact.html" class="btn btn-danger btn-lg">
-      Book Your Event
-    </a>
-  </div>
-</section>
-
-<!-- ================= BUSINESS INFO ================= -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3">Why Bomb City Photo Booth?</h2>
-        <p>
+    <!-- ================= WHY US ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2 class="mb-4">Why Bomb City Photo Booth?</h2>
+        <p class="text-muted-custom mb-4">
           We provide a modern, easy-to-use photo booth experience that keeps
           guests entertained and creates memories they can take home.
         </p>
-        <p>
-          From weddings and birthdays to corporate events and fundraisers,
-          our setup is clean, professional, and fully customizable.
+        <p class="text-muted-custom mb-5">
+          From weddings and birthdays to corporate events and fundraisers, our
+          setup is clean, professional, and fully customizable.
         </p>
-      </div>
 
-      <div class="col-md-6">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">✔ Professional DSLR camera</li>
-          <li class="list-group-item">✔ Studio lighting</li>
-          <li class="list-group-item">✔ Friendly on-site attendant</li>
-          <li class="list-group-item">✔ Custom digital templates</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= BASE RENTAL ================= -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Base Rental</h2>
-
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="package-cards">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="card-title fw-bold">$400</h3>
-            <p class="text-muted">Starting price</p>
-
-            <ul class="list-unstyled mb-4">
-              <li>✔ 3 hours of service</li>
-              <li>✔ Booth with DSLR camera</li>
-              <li>✔ Backdrop</li>
-              <li>✔ Lighting</li>
-              <li>✔ Setup and tear down</li>
-              <li>✔ Digital sharing</li>
-              <li>✔ On-site attendant</li>
-              <li>✔ Delivery within 40 mile</li>
-              <li>✔ Host recieves digital copy of all photos following event</li>
-            </ul>
-
-            <a href="./packages.html" class="btn btn-outline-dark">
-              View Packages
-            </a>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card card-brand card-pad h-100">
+              <p class="fw-semibold mb-0">Professional DSLR Camera</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-brand card-pad h-100">
+              <p class="fw-semibold mb-0">Studio Lighting</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-brand card-pad h-100">
+              <p class="fw-semibold mb-0">On-Site Attendant</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-brand card-pad h-100">
+              <p class="fw-semibold mb-0">Custom Digital Templates</p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ================= BASE RENTAL ================= -->
+    <section class="section-padding bg-alt text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card card-brand card-pad">
+              <h2 class="mb-2">Base Rental</h2>
+              <p class="text-muted-custom mb-4">Starting at</p>
+              <div class="display-5 fw-bold mb-4">$400</div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <ul class="list-unstyled text-center mx-auto">
+                    <li>✔ 3 hours of service</li>
+                    <li>✔ Booth with DSLR camera</li>
+                    <li>✔ Backdrop</li>
+                    <li>✔ Lighting</li>
+                    <li>✔ Setup and tear down</li>
+                    <li>✔ Digital sharing</li>
+                    <li>✔ On-site attendant</li>
+                    <li>✔ Delivery within 40 miles</li>
+                    <li>✔ Host receives digital gallery after event</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/contact.html" class="btn btn-brand btn-lg mt-4"> Book Now </a>
+      </div>
+    </section>
+
+    <!-- ================= CAPTURE MODES ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2 class="mb-5">Capture Modes</h2>
+
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h5>Photos</h5>
+              <p class="text-muted-custom mb-0">
+                High-quality still photos your guests will love.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h5>GIFs</h5>
+              <p class="text-muted-custom mb-0">
+                Short animated loops perfect for social sharing.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h5>Boomerangs</h5>
+              <p class="text-muted-custom mb-0">
+                Fun forward-and-back animations.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h5>Video</h5>
+              <p class="text-muted-custom mb-0">Capture moments in motion.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= CAPTURE MODES ================= -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-5">Capture Modes</h2>
-
-    <div class="row g-4 text-center">
-      <div class="col-md-3">
-        <h5 class="fw-bold">Photos</h5>
-        <p>High-quality still photos your guests will love.</p>
+    <!-- ================= ADD-ONS TEASER ================= -->
+    <section class="section-padding bg-alt text-center">
+      <div class="container">
+        <h2 class="mb-4">Customize Your Experience</h2>
+        <p class="text-muted-custom mb-4">
+          Enhance your event with optional add-ons like custom backdrops,
+          premium props, prints, and digital frames.
+        </p>
+        <a href="/packages.html" class="btn btn-outline-brand btn-lg">
+          View Packages & Add-Ons
+        </a>
       </div>
-      <div class="col-md-3">
-        <h5 class="fw-bold">GIFs</h5>
-        <p>Short animated loops perfect for social sharing.</p>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2 class="mb-3">Ready to Book?</h2>
+        <p class="text-muted-custom mb-4">
+          Let’s make your event unforgettable.
+        </p>
+        <a href="/contact.html" class="btn btn-brand btn-lg"> Contact Us </a>
       </div>
-      <div class="col-md-3">
-        <h5 class="fw-bold">Boomerangs</h5>
-        <p>Fun forward-and-back animations.</p>
-      </div>
-      <div class="col-md-3">
-        <h5 class="fw-bold">Video</h5>
-        <p>Capture moments in motion.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= ADD-ONS PREVIEW ================= -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Customize Your Experience</h2>
+    <div id="footer"></div>
 
-    <p class="mb-4">
-      Enhance your event with optional add-ons like custom backdrops,
-      premium props, prints, and digital frames.
-    </p>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <a href="./addons.html" class="btn btn-dark">
-      Explore Add-Ons
-    </a>
-  </div>
-</section>
-
-<!-- ================= CTA ================= -->
-<section class="py-5 text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-3">Ready to Book?</h2>
-    <p class="mb-4">
-      Let’s make your event unforgettable.
-    </p>
-    <a href="./contact.html" class="btn btn-danger btn-lg">
-      Contact Us
-    </a>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="py-4">
-  <div class="container text-center small">
-    <p class="mb-1">
-      &copy; <span id="year"></span> Bomb City Photo Booth, LLC
-    </p>
-    <p class="mb-0">
-      Amarillo, TX ·
-      <a href="mailto:nick.gallegos@bombcityphotobooth.com" class="text-white">
-        nick.gallegos@bombcityphotobooth.com
-      </a>
-    </p>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
+    <!-- Custom JS -->
+    <script src="/js/main.js"></script>
+  </body>
 </html>

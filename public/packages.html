@@ -1,246 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Packages & Pricing | Bomb City Photo Booth</title>
-  <link rel="icon" href="./images/logos/BCPB-logo.svg" type="image/svg+xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Packages | Bomb City Photo Booth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div id="header" class="sticky-top"></div>
 
-  <!-- Compiled SCSS -->
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- ================= PAGE HERO ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h1 class="mb-3">Packages & Pricing</h1>
+        <p class="text-muted-custom">
+          Simple pricing. Customizable options. No surprises.
+        </p>
+      </div>
+    </section>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  >
-</head>
+    <!-- ================= BASE PACKAGE ================= -->
+    <section class="section-padding bg-alt text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card card-brand card-pad">
+              <h3 class="mb-3">Base Rental</h3>
+              <div class="display-6 fw-bold mb-4">$400</div>
 
-<body>
-
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="./index.html">
-      <img src="./images/logos/BCPB-logo.svg" alt="Bomb City Photo Booth Logo" height="40" width="40"/>
-      Bomb City Photo Booth
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div id="mainNav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="./packages.html">Packages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./booth.html">Photo Booth</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-            Add-Ons
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./addons.html">Overview</a></li>
-            <li><a class="dropdown-item" href="./addons/backdrops.html">Backdrops</a></li>
-            <li><a class="dropdown-item" href="./addons/props.html">Props</a></li>
-            <li><a class="dropdown-item" href="./addons/printer.html">Printer</a></li>
-            <li><a class="dropdown-item" href="./addons/digital-frames.html">Digital Frames</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="./portfolio.html">Portfolio</a>
-        </li>
-
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-danger btn-book" href="./contact.html">
-            Book Now
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- ================= HERO ================= -->
-<section class="hero text-black text-center">
-  <div class="container">
-    <h1 class="display-5 fw-bold mb-3">Packages & Pricing</h1>
-    <p class="lead">
-      Simple, transparent pricing for every type of event.
-    </p>
-  </div>
-</section>
-
-<!-- ================= PACKAGES ================= -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
-
-      <!-- BASIC -->
-      <div class="col-md">
-          <div class="package-cards">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <h4 class="fw-bold">Basic Package</h4>
-                <h2 class="my-3">$450</h2>
-                <p class="text-muted">Perfect for small events that only want digital photos</p>
-
-                <ul class="list-unstyled mb-4">
+              <ul class="feature-list list-unstyled text-center">
                 <li>✔ 3 hours of service</li>
-                <li>✔ Booth with DSLR camera</li>
-                <li>✔ Backdrop</li>
-                <li>✔ Lighting</li>
-                <li>✔ Setup and tear down</li>
+                <li>✔ DSLR photo booth</li>
+                <li>✔ Backdrop & lighting</li>
                 <li>✔ Digital sharing</li>
                 <li>✔ On-site attendant</li>
-                <li>✔ Delivery within 40 mile</li>
-                <li>✔ Host recieves digital copy of all photos following event</li>
-                <li>✔ Props</li>
-                <li>✔ Digital frame</li>
-                
-                </ul>
+                <li>✔ Setup & tear down</li>
+                <li>✔ Delivery within 40 miles</li>
+              </ul>
 
-                <a href="./contact.html" class="btn btn-outline-dark">
-                Book Basic
-                </a>
-              </div>
+              <a href="/contact.html" class="btn btn-brand btn-lg mt-4">
+                Book This Package
+              </a>
             </div>
           </div>
+        </div>
       </div>
+    </section>
 
-      <!-- STANDARD -->
+    <!-- ================= ADD-ONS SUMMARY ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2 class="mb-4">Popular Add-Ons</h2>
 
-        <div class="col-md">
-            <div class="package-cards">
-            <div class="card h-100 shadow border-danger">
-            <div class="card-body text-center">
-                <span class="badge bg-danger mb-2">Most Popular</span>
-                <h4 class="fw-bold">Printing Package</h4>
-                <h2 class="my-3">$600</h2>
-                <p class="text-muted">Our most requested package</p>
-
-                <ul class="list-unstyled mb-4">
-                <li>✔ 3 hours of service</li>
-                <li>✔ Booth with DSLR camera</li>
-                <li>✔ Backdrop</li>
-                <li>✔ Lighting</li>
-                <li>✔ Setup and tear down</li>
-                <li>✔ Digital sharing</li>
-                <li>✔ On-site attendant</li>
-                <li>✔ Delivery within 40 mile</li>
-                <li>✔ Host recieves digital copy of all photos following event</li>
-                <li>✔ Props</li>
-                <li>✔ Digital frame</li>
-                <li>✔ Unlimited Photo Printing</li>
-                </ul>
-
-                <a href="./contact.html" class="btn btn-danger">
-                Book Printing
-                </a>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h6>Custom Backdrops</h6>
+              <p class="text-muted-custom mb-0">Match your theme perfectly.</p>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h6>Premium Props</h6>
+              <p class="text-muted-custom mb-0">
+                High-quality, event-ready props.
+              </p>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h6>On-Site Printing</h6>
+              <p class="text-muted-custom mb-0">Take-home prints for guests.</p>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-brand p-4 h-100">
+              <h6>Digital Frames</h6>
+              <p class="text-muted-custom mb-0">Live slideshow display.</p>
+            </div>
+          </div>
         </div>
 
-      <!-- PREMIUM 
+        <a href="/contact.html" class="btn btn-outline-brand btn-lg mt-5">
+          Request a Custom Quote
+        </a>
+      </div>
+    </section>
 
-        <div class="col-md-4">
-            <div class="package-cards">
-            <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-                <h4 class="fw-bold">Printing PLUS</h4>
-                <h2 class="my-3">$XXX</h2>
-                <p class="text-muted">The full experience</p>
+    <div id="footer"></div>
 
-                <ul class="list-unstyled mb-4">
-                <li>✔ 3 hours of service</li>
-                <li>✔ Booth with DSLR camera</li>
-                <li>✔ Backdrop</li>
-                <li>✔ Lighting</li>
-                <li>✔ Setup and tear down</li>
-                <li>✔ Digital sharing</li>
-                <li>✔ On-site attendant</li>
-                <li>✔ Delivery within 40 mile</li>
-                <li>✔ Host recieves digital copy of all photos following event</li>
-                <li>✔ Props</li>
-                <li>✔ Digital frame</li>
-                </ul>
-
-                <a href="./contact.html" class="btn btn-outline-dark">
-                Book Premium
-                </a>
-            </div>
-            </div>
-            </div>
-        </div> -->
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= ADD-ONS ================= -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-3">Customize Your Package</h2>
-    <p class="mb-4">
-      Add backdrops, props, prints, or digital frames to make your event unique.
-    </p>
-
-    <a href="./addons.html" class="btn btn-dark">
-      View Add-Ons
-    </a>
-  </div>
-</section>
-
-<!-- ================= CTA ================= -->
-<section class="py-5 text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-3">Ready to Book?</h2>
-    <p class="mb-4">
-      Tell us about your event and we’ll take care of the rest.
-    </p>
-    <a href="./contact.html" class="btn btn-danger btn-lg">
-      Book Now
-    </a>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="py-4">
-  <div class="container text-center small">
-    <p class="mb-1">
-      &copy; <span id="year"></span> Bomb City Photo Booth, LLC
-    </p>
-    <p class="mb-0">
-      Amarillo, TX ·
-      <a href="mailto:nick.gallegos@bombcityphotobooth.com" class="text-white">
-        nick.gallegos@bombcityphotobooth.com
-      </a>
-    </p>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>

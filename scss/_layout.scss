@@ -1,12 +1,18 @@
-body {
-  background-color: #f9fafb;
+@use "variables" as *;
+
+.bg-brand {
+  background-color: $bg-accent;
+  color: $text-light;
 }
 
-.navbar-brand {
-  font-weight: 700;
+.bg-alt {
+  background-color: $bg-alt;
 }
 
-footer {
-  background: #111827;
-  color: #fff;
+.navbar .nav-link {
+  color: $text-light;
+
+  &:hover {
+    color: $color-brand;
+  }
 }

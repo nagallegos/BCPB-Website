@@ -1,147 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Add-Ons | Bomb City Photo Booth</title>
-  <link rel="icon" href="./images/logos/BCPB-logo.svg" type="image/svg+xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add-Ons | Bomb City Photo Booth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="./index.html">
-      <img src="./images/logos/BCPB-logo.svg" alt="Bomb City Photo Booth Logo" height="40" width="40"/>
-      Bomb City Photo Booth
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="mainNav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="./packages.html">Packages</a></li>
-        <li class="nav-item"><a class="nav-link" href="./booth.html">Photo Booth</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Add-Ons</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="./addons.html">Overview</a></li>
-            <li><a class="dropdown-item" href="./addons/backdrops.html">Backdrops</a></li>
-            <li><a class="dropdown-item" href="./addons/props.html">Props</a></li>
-            <li><a class="dropdown-item" href="./addons/printer.html">Printer</a></li>
-            <li><a class="dropdown-item" href="./addons/digital-frames.html">Digital Frames</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-        <li class="nav-item ms-lg-3"><a class="btn btn-danger btn-book" href="./contact.html">Book Now</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
 
-<!-- ================= HERO ================= -->
-<section class="hero text-black text-center">
-  <div class="container">
-    <h1 class="display-5 fw-bold mb-3">Add-Ons Overview</h1>
-    <p class="lead">Enhance your photo booth experience with our customizable add-ons.</p>
-  </div>
-</section>
+  <body>
+    <!-- Dynamic Header -->
+    <div id="header"></div>
 
-<!-- ================= BASE PRICE ================= -->
-<section class="py-5 bg-light text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-3">Base Rental Price</h2>
-    <p class="mb-3">Our standard photo booth rental starts at <strong>$400 for 3 hours</strong> including:</p>
-    <ul class="list-unstyled mb-4">
-      <li>3 hours of service</li>
-      <li>Booth with DSLR camera</li>
-      <li>Backdrop</li>
-      <li>Lighting</li>
-      <li>Setup and tear down</li>
-      <li>Digital sharing</li>
-      <li>On-site attendant</li>
-      <li>Delivery within 40 mile</li>
-      <li>Host recieves digital copy of all photos following event</li>
-    </ul>
-    <a href="./contact.html" class="btn btn-danger btn-lg">Book Now</a>
-  </div>
-</section>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h1 class="mb-3">Photo Booth Add-Ons</h1>
+        <p class="lead text-muted-custom mb-0">
+          Customize your photo booth experience with optional upgrades that make
+          your event even more memorable.
+        </p>
+      </div>
+    </section>
 
-<!-- ================= ADD-ONS GRID ================= -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="fw-bold mb-4 text-center">Our Add-Ons</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- ================= BASE RENTAL SUMMARY ================= -->
+    <section class="section-padding bg-alt">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card card-brand card-pad text-center">
+              <h2 class="mb-2">Customize Your Photo Booth</h2>
+              <p class="lead text-muted-custom mb-4">
+                Start with our professional base rental, then enhance your
+                experience with optional add-ons.
+              </p>
 
-      <!-- Backdrops -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Backdrops</h5>
-            <p class="card-text">Included with all packages</p>
-            <a href="./addons/backdrops.html" class="btn btn-primary btn-book">More Info</a>
+              <div class="mb-4">
+                <div class="text-muted-custom">Base Rental</div>
+                <div class="display-5 fw-bold">$400</div>
+                <div class="text-muted-custom">Starting price · 3 hours</div>
+              </div>
+
+              <div class="row g-3 text-start">
+                <div class="col-md-6">
+                  <div class="card card-brand card-pad h-100">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-camera icon-brand"></i>
+                      <span class="fw-semibold">DSLR photo booth</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-brand card-pad h-100">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-lightning-charge icon-brand"></i>
+                      <span class="fw-semibold">Studio lighting</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-brand card-pad h-100">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-person-check icon-brand"></i>
+                      <span class="fw-semibold">On-site attendant</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-brand card-pad h-100">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-cloud-arrow-down icon-brand"></i>
+                      <span class="fw-semibold">Digital gallery delivery</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="/contact.html" class="btn btn-brand btn-lg mt-4">
+                Book Base Rental
+              </a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Props -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Props</h5>
-            <p class="card-text">Starting at $25</p>
-            <a href="./addons/props.html" class="btn btn-primary btn-book">More Info</a>
+    <!-- ================= ADD-ONS LIST ================= -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2 class="mb-4">Add-Ons</h2>
+        <p class="text-muted-custom mb-5">
+          Upgrade your experience with any of the add-ons below.
+        </p>
+
+        <div class="row g-4 text-start">
+          <!-- Unlimited Prints -->
+          <div class="col-md-6">
+            <div class="card card-brand card-pad h-100">
+              <h3 class="h5 mb-2">
+                <i class="bi bi-printer icon-brand me-2"></i>Unlimited Prints
+              </h3>
+              <p class="text-muted-custom mb-3">
+                Give your guests physical keepsakes they can take home the same
+                night.
+              </p>
+              <ul class="mb-4">
+                <li>High-quality dye-sublimation prints</li>
+                <li>Multiple prints per session</li>
+                <li>Custom-designed template</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$150</div>
+                <a href="/contact.html" class="btn btn-outline-brand">
+                  Add to Booking
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Backdrop -->
+          <div class="col-md-6">
+            <div class="card card-brand card-pad h-100">
+              <h3 class="h5 mb-2">
+                <i class="bi bi-aspect-ratio icon-brand me-2"></i>Custom
+                Backdrop
+              </h3>
+              <p class="text-muted-custom mb-3">
+                Match your event theme with a professionally styled backdrop.
+              </p>
+              <ul class="mb-4">
+                <li>Solid color or themed design</li>
+                <li>Clean, wrinkle-free setup</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$75</div>
+                <a href="/contact.html" class="btn btn-outline-brand">
+                  Add to Booking
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Props -->
+          <div class="col-md-6">
+            <div class="card card-brand card-pad h-100">
+              <h3 class="h5 mb-2">
+                <i class="bi bi-stars icon-brand me-2"></i>Premium Props
+              </h3>
+              <p class="text-muted-custom mb-3">
+                Upgrade from standard props to a curated collection tailored to
+                your event.
+              </p>
+              <ul class="mb-4">
+                <li>Themed and high-quality props</li>
+                <li>Cleaned and organized display</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$50</div>
+                <a href="/contact.html" class="btn btn-outline-brand">
+                  Add to Booking
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- GIF / Boomerang -->
+          <div class="col-md-6">
+            <div class="card card-brand card-pad h-100">
+              <h3 class="h5 mb-2">
+                <i class="bi bi-images icon-brand me-2"></i>GIF &amp; Boomerang
+                Mode
+              </h3>
+              <p class="text-muted-custom mb-3">
+                Add motion and fun with animated capture modes perfect for
+                social sharing.
+              </p>
+              <ul class="mb-4">
+                <li>GIF loops</li>
+                <li>Boomerangs</li>
+                <li>Instant digital sharing</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$50</div>
+                <a href="/contact.html" class="btn btn-outline-brand">
+                  Add to Booking
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Mode -->
+          <div class="col-md-6">
+            <div class="card card-brand card-pad h-100">
+              <h3 class="h5 mb-2">
+                <i class="bi bi-camera-video icon-brand me-2"></i>Video Mode
+              </h3>
+              <p class="text-muted-custom mb-3">
+                Capture moments in motion with short video clips from your
+                event.
+              </p>
+              <ul class="mb-4">
+                <li>Short video recordings</li>
+                <li>Digital delivery after event</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$75</div>
+                <a href="/contact.html" class="btn btn-outline-brand">
+                  Add to Booking
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Idle Screen -->
+          <div class="col-md-6">
+            <div class="card card-brand card-pad h-100">
+              <h3 class="h5 mb-2">
+                <i class="bi bi-display icon-brand me-2"></i>Custom Idle Screen
+              </h3>
+              <p class="text-muted-custom mb-3">
+                Display a branded or themed screen when the booth is not in use.
+              </p>
+              <ul class="mb-4">
+                <li>Event name or logo</li>
+                <li>Custom colors and layout</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$40</div>
+                <a href="/contact.html" class="btn btn-outline-brand">
+                  Add to Booking
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Printer -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Printer</h5>
-            <p class="card-text">Starting at $150</p>
-            <a href="./addons/printer.html" class="btn btn-primary btn-book">More Info</a>
-          </div>
-        </div>
+    <!-- ================= CTA ================= -->
+    <section class="section-padding bg-alt text-center">
+      <div class="container">
+        <h2 class="mb-3">Ready to Customize?</h2>
+        <p class="text-muted-custom mb-4">
+          Choose the add-ons that fit your event and we'll take care of the
+          rest.
+        </p>
+        <a href="/contact.html" class="btn btn-brand btn-lg">Contact Us</a>
       </div>
+    </section>
 
-      <!-- Digital Frames -->
-      <div class="col">
-        <div class="card h-100 text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Digital Frames</h5>
-            <p class="card-text">Starting at $25</p>
-            <a href="./addons/digital-frames.html" class="btn btn-primary btn-book">More Info</a>
-          </div>
-        </div>
-      </div>
+    <!-- Dynamic Footer -->
+    <div id="footer"></div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="py-4">
-  <div class="container text-center small">
-    <p class="mb-1">&copy; <span id="year"></span> Bomb City Photo Booth, LLC</p>
-    <p class="mb-0">
-      Amarillo, TX ·
-      <a href="mailto:nick.gallegos@bombcityphotobooth.com" class="text-white">nick.gallegos@bombcityphotobooth.com</a>
-    </p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
