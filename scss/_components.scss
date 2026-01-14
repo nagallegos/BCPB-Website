@@ -1,5 +1,22 @@
 @use "variables" as *;
 
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: $bg-alt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain; // shows full logo, no aggressive crop
+  }
+}
+
 /* Buttons */
 .btn.btn-brand {
   background-color: $color-brand;
