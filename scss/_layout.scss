@@ -16,3 +16,9 @@
     color: $color-brand;
   }
 }
+
+.navbar .nav-link.active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}

@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 /* Buttons */
-.btn-brand {
+.btn.btn-brand {
   background-color: $color-brand;
   color: $text-light;
   border: none;
@@ -12,7 +12,7 @@
   }
 }
 
-.btn-outline-brand {
+.btn.btn-outline-brand {
   background: transparent;
   border: 2px solid $color-brand;
   color: $color-brand;
@@ -24,9 +24,17 @@
 }
 
 /* Cards */
-.card-brand {
+.card.card-brand {
   border: none;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-pad {
+  padding: 1.5rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
 }
 
 /* Addon Items */
@@ -121,12 +129,12 @@
   color: $color-brand;
 }
 
-.card-pad {
-  padding: 1.5rem;
+.icon-brand-alt1 {
+  color: $color-brand-dark;
+}
 
-  @media (min-width: 768px) {
-    padding: 2rem;
-  }
+.icon-brand-alt2 {
+  color: $color-brand-darker;
 }
 
 /* Portfolio */

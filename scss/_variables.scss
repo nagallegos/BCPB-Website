@@ -2,22 +2,22 @@
 @use "sass:color";
 
 /* Backgrounds */
-$bg-main: #f8f9fa;
+$bg-main: #fafafa;
 $bg-alt: #ffffff;
-$bg-accent: #111827;
+$bg-accent: #18181b; // Soft black (not pure black)
 
 /* Brand / Components */
-$color-brand: #2563eb;
+$color-brand: #f97316; // Warm orange
 $color-brand-hover: color.adjust($color-brand, $lightness: -10%);
+$color-brand-dark: color.adjust($color-brand, $lightness: -15%);
+$color-brand-darker: color.adjust($color-brand-dark, $lightness: -15%);
 
 /* Text */
-$text-dark: #111827;
-$text-light: #f9fafb;
-$text-muted: #6b7280;
+$text-dark: #18181b;
+$text-light: #fafafa;
+$text-muted: #71717a;
 
-/* ================= BOOTSTRAP OVERRIDES ================= */
-/* These MUST be defined before Bootstrap is imported */
-
+/* Bootstrap overrides */
 $body-bg: $bg-main;
 $body-color: $text-dark;
 

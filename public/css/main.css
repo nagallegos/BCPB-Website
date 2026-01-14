@@ -3,11 +3,18 @@
 /* Backgrounds */
 /* Brand / Components */
 /* Text */
-/* ================= BOOTSTRAP OVERRIDES ================= */
-/* These MUST be defined before Bootstrap is imported */
+/* Bootstrap overrides */
 /* Optional but recommended */
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3 {
+  letter-spacing: -0.02em;
 }
 
 .section-padding {
@@ -15,34 +22,43 @@ body {
 }
 
 .text-muted-custom {
-  color: #6b7280;
+  color: #71717a;
 }
 
 /* Buttons */
-.btn-brand {
-  background-color: #2563eb;
-  color: #f9fafb;
+.btn.btn-brand {
+  background-color: #f97316;
+  color: #fafafa;
   border: none;
 }
-.btn-brand:hover {
-  background-color: rgb(18.5714285714, 76.1428571429, 202.4285714286);
-  color: #f9fafb;
+.btn.btn-brand:hover {
+  background-color: rgb(214.4769874477, 91.129707113, 5.5230125523);
+  color: #fafafa;
 }
 
-.btn-outline-brand {
+.btn.btn-outline-brand {
   background: transparent;
-  border: 2px solid #2563eb;
-  color: #2563eb;
+  border: 2px solid #f97316;
+  color: #f97316;
 }
-.btn-outline-brand:hover {
-  background-color: #2563eb;
-  color: #f9fafb;
+.btn.btn-outline-brand:hover {
+  background-color: #f97316;
+  color: #fafafa;
 }
 
 /* Cards */
-.card-brand {
+.card.card-brand {
   border: none;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-pad {
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  .card-pad {
+    padding: 2rem;
+  }
 }
 
 /* Addon Items */
@@ -62,7 +78,7 @@ body {
 .base-price .price {
   font-size: 3rem;
   font-weight: 700;
-  color: #2563eb;
+  color: #f97316;
 }
 .base-price .subtext {
   display: block;
@@ -90,7 +106,7 @@ body {
   gap: 0.75rem;
 }
 .addon-item h2 i, .addon-item .h2 i {
-  color: #2563eb;
+  color: #f97316;
   font-size: 1.4rem;
 }
 
@@ -110,7 +126,7 @@ body {
 .addon-item .addon-price {
   font-weight: 600;
   font-size: 1.25rem;
-  color: #2563eb;
+  color: #f97316;
 }
 
 .feature-list {
@@ -123,16 +139,15 @@ body {
 }
 
 .icon-brand {
-  color: #2563eb;
+  color: #f97316;
 }
 
-.card-pad {
-  padding: 1.5rem;
+.icon-brand-alt1 {
+  color: rgb(189.6171548117, 80.5669456067, 4.8828451883);
 }
-@media (min-width: 768px) {
-  .card-pad {
-    padding: 2rem;
-  }
+
+.icon-brand-alt2 {
+  color: rgb(115.0376569038, 48.8786610879, 2.9623430962);
 }
 
 /* Portfolio */
@@ -178,21 +193,21 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 999px;
-  border: 2px solid #2563eb;
-  color: #2563eb;
+  border: 2px solid #f97316;
+  color: #f97316;
   text-decoration: none;
   font-size: 1.25rem;
   transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 .social-link:hover {
   transform: translateY(-2px);
-  background-color: #2563eb;
-  color: #f9fafb;
+  background-color: #f97316;
+  color: #fafafa;
 }
 
 .bg-brand {
-  background-color: #111827;
-  color: #f9fafb;
+  background-color: #18181b;
+  color: #fafafa;
 }
 
 .bg-alt {
@@ -200,10 +215,16 @@ body {
 }
 
 .navbar .nav-link {
-  color: #f9fafb;
+  color: #fafafa;
 }
 .navbar .nav-link:hover {
-  color: #2563eb;
+  color: #f97316;
+}
+
+.navbar .nav-link.active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 /* ================= BOOTSTRAP ================= */
