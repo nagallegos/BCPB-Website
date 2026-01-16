@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+}
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+.text-muted-custom {
+  color: $text-muted;
+}

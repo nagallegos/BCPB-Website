@@ -28,7 +28,7 @@ h3,
 /* Buttons */
 .btn.btn-brand {
   background-color: #f97316;
-  color: #fafafa;
+  color: black;
   border: none;
 }
 .btn.btn-brand:hover {
@@ -212,6 +212,26 @@ h3,
 
 .bg-alt {
   background-color: #ffffff;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar .nav-title {
+  color: #f97316;
 }
 
 .navbar .nav-link {
