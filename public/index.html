@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,9 +19,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css" />
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,24 +26,30 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <div id="header" class="sticky-top"></div>
 
     <!-- HERO -->
-    <section class="section-padding text-center">
-      <div class="container">
-        <h1 class="mb-3">Modern Photo Booth Rentals in Amarillo</h1>
-        <p class="lead text-muted-custom mb-4">
-          Sleek, fun, and unforgettable experiences for weddings, parties, and
-          events.
+    <section class="hero hero-home section-padding text-center">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative text-center">
+        <h1 class="mb-3">
+          Handcrafted Photo Booth Experiences for Unforgettable Events
+        </h1>
+        <p class="lead text-muted-light">
+          Bringing people together with fun, laughter, and memories your guests
+          can take home.
         </p>
         <a href="/contact.html" class="btn btn-brand btn-lg"> Book Now </a>
       </div>
     </section>
 
     <!-- ================= WHY US ================= -->
-    <section class="section-padding text-center">
+    <section class="section-index-why section-padding text-center">
       <div class="container">
         <h2 class="mb-4">Why Bomb City Photo Booth?</h2>
         <p class="text-muted-custom mb-4">
@@ -59,23 +62,31 @@
         </p>
 
         <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card card-brand card-pad h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate card-pad h-100 d-flex align-items-center justify-content-center"
+            >
               <p class="fw-semibold mb-0">Professional DSLR Camera</p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card card-brand card-pad h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate card-pad h-100 d-flex align-items-center justify-content-center"
+            >
               <p class="fw-semibold mb-0">Studio Lighting</p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card card-brand card-pad h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate card-pad h-100 d-flex align-items-center justify-content-center"
+            >
               <p class="fw-semibold mb-0">On-Site Attendant</p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card card-brand card-pad h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate card-pad h-100 d-flex align-items-center justify-content-center"
+            >
               <p class="fw-semibold mb-0">Custom Digital Templates</p>
             </div>
           </div>
@@ -84,70 +95,73 @@
     </section>
 
     <!-- ================= BASE RENTAL ================= -->
-    <section class="section-padding bg-alt text-center">
+    <section
+      id="base-rental"
+      class="section-index-base section-padding bg-alt text-center"
+    >
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="card card-brand card-pad">
+            <div class="card card-brand card-animate card-base card-pad">
               <h2 class="mb-2">Base Rental</h2>
-              <p class="text-muted-custom mb-4">Starting at</p>
+              <p class="text-muted-dark mb-4">Starting at</p>
               <div class="display-5 fw-bold mb-4">$400</div>
               <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <ul class="feature-list list-unstyled text-center mx-auto">
+                <div class="col-md-9">
+                  <ul class="feature-list mx-auto">
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      3 hours of service
+                      <i class="bi bi-clock-fill icon-brand"></i>
+                      <span class="text-end">3 hours of service</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Booth with DSLR camera
+                      <i class="bi bi-camera-fill icon-brand"></i>
+                      <span class="text-end">Booth with DSLR camera</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Backdrop
+                      <i class="bi bi-aspect-ratio-fill icon-brand"></i>
+                      <span class="text-end">Backdrop</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Lighting
+                      <i class="bi bi-lightbulb-fill icon-brand"></i>
+                      <span class="text-end">Lighting</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Setup and tear down
+                      <i class="bi bi-arrow-repeat icon-brand"></i>
+                      <span class="text-end">Setup and tear down</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Digital sharing
+                      <i class="bi bi-share-fill icon-brand"></i>
+                      <span class="text-end">Digital sharing</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      On-site attendant
+                      <i class="bi bi-person-check-fill icon-brand"></i>
+                      <span class="text-end">On-site attendant</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2 mb-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Delivery within 40 miles
+                      <i class="bi bi-geo-alt-fill icon-brand"></i>
+                      <span class="text-end">Delivery within 40 miles</span>
                     </li>
                     <li
-                      class="d-flex align-items-center justify-content-center gap-2"
+                      class="d-flex align-items-center justify-content-between gap-2 me-2"
                     >
-                      <i class="bi bi-check-circle-fill icon-brand"></i>
-                      Host receives digital gallery after event
+                      <i class="bi bi-images icon-brand"></i>
+                      <span class="text-end">Post event digital gallery</span>
                     </li>
                   </ul>
                 </div>
@@ -156,47 +170,57 @@
           </div>
         </div>
 
-        <a href="/contact.html" class="btn btn-brand btn-lg mt-4"> Book Now </a>
+        <a href="/packages.html" class="btn btn-outline-brand btn-lg mt-4">
+          View Packages
+        </a>
       </div>
     </section>
 
     <!-- ================= CAPTURE MODES ================= -->
-    <section class="section-padding text-center">
+    <section class="section-index-modes section-padding text-center">
       <div class="container">
         <h2 class="mb-5">Capture Modes</h2>
 
         <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card card-brand p-4 h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate p-4 h-100 d-flex align-items-center justify-content-center"
+            >
               <h5>Photos</h5>
-              <p class="text-muted-custom mb-0">
+              <p class="text-muted-dark mb-0">
                 High-quality still photos your guests will love.
               </p>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card card-brand p-4 h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate p-4 h-100 d-flex align-items-center justify-content-center"
+            >
               <h5>GIFs</h5>
-              <p class="text-muted-custom mb-0">
+              <p class="text-muted-dark mb-0">
                 Short animated loops perfect for social sharing.
               </p>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card card-brand p-4 h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate p-4 h-100 d-flex align-items-center justify-content-center"
+            >
               <h5>Boomerangs</h5>
-              <p class="text-muted-custom mb-0">
+              <p class="text-muted-dark mb-0">
                 Fun forward-and-back animations.
               </p>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card card-brand p-4 h-100">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card card-brand card-animate p-4 h-100 d-flex align-items-center justify-content-center"
+            >
               <h5>Video</h5>
-              <p class="text-muted-custom mb-0">Capture moments in motion.</p>
+              <p class="text-muted-dark mb-0">Capture moments in motion.</p>
             </div>
           </div>
         </div>
@@ -204,31 +228,26 @@
     </section>
 
     <!-- ================= ADD-ONS TEASER ================= -->
-    <section class="section-padding bg-alt text-center">
+    <section class="section-index-addon section-padding bg-alt text-center">
       <div class="container">
-        <h2 class="mb-4">Customize Your Experience</h2>
-        <p class="text-muted-custom mb-4">
-          Enhance your event with optional add-ons like custom backdrops,
-          premium props, prints, and digital frames.
+        <h2 class="mb-4 color-brand">Customize Your Experience</h2>
+        <p class="text-muted-light mb-4">
+          Enhance your event with optional add-ons like custom backdrops, props,
+          prints, and digital frames.
         </p>
         <div class="container">
-          <a href="/packages.html" class="btn btn-outline-brand btn-lg me-2">
-            Packages
-          </a>
           <a href="/addons.html" class="btn btn-outline-brand btn-lg">
-            Add-Ons
+            View Add-Ons
           </a>
         </div>
       </div>
     </section>
 
     <!-- ================= FINAL CTA ================= -->
-    <section class="section-padding text-center">
+    <section class="section-index-cta section-padding text-center">
       <div class="container">
         <h2 class="mb-3">Ready to Book?</h2>
-        <p class="text-muted-custom mb-4">
-          Let’s make your event unforgettable.
-        </p>
+        <p class="text-muted-dark mb-4">Let’s make your event unforgettable.</p>
         <a href="/contact.html" class="btn btn-brand btn-lg"> Contact Us </a>
       </div>
     </section>

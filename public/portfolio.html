@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio | Bomb City Photo Booth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="/assets/icons/BCPB_orange.png" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,7 +21,10 @@
     <div id="header" class="sticky-top"></div>
 
     <!-- ================= PAGE HERO ================= -->
-    <section class="section-padding text-center">
+    <section
+      class="section-portfolio-hero hero hero-portfolio section-padding text-center"
+    >
+      <div class="hero-overlay"></div>
       <div class="container">
         <h1 class="mb-3">Portfolio</h1>
         <p class="text-muted-custom mb-0">
@@ -31,7 +36,7 @@
 
     <!-- ================= HIGHLIGHT GRID ================= -->
     <section class="section-padding bg-alt">
-      <div class="container">
+      <div class="container section-portfolio-highlight">
         <div class="row g-4" id="portfolioGrid">
           <!-- Photo 1 -->
           <div class="col-12 col-md-6 col-lg-4">
@@ -141,17 +146,16 @@
             href="https://bombcityphotobooth.pixieset.com/portfolio/"
             target="_blank"
             rel="noopener"
-            class="btn btn-outline-brand btn-lg me-2"
+            class="btn btn-outline-brand btn-lg me-2 mb-4"
           >
             View Full Portfolio on Pixieset
           </a>
-          <a href="/contact.html" class="btn btn-brand btn-lg"> Book Now </a>
         </div>
       </div>
     </section>
 
     <!-- ================= CTA ================= -->
-    <section class="section-padding text-center">
+    <section class="section-portfolio-cta section-padding text-center">
       <div class="container">
         <h2 class="mb-3">Want Photos Like These?</h2>
         <p class="text-muted-custom mb-4">

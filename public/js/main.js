@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------- Portfolio Lightbox (only on portfolio page) ----------
   initPortfolioLightbox();
+
+  initRevealOnScroll();
 });
 
 function initPortfolioLightbox() {
@@ -83,7 +85,7 @@ function initPortfolioLightbox() {
       startX = e.touches[0].clientX;
       startY = e.touches[0].clientY;
     },
-    { passive: true }
+    { passive: true },
   );
 
   modalImage.addEventListener(
@@ -101,7 +103,7 @@ function initPortfolioLightbox() {
         e.preventDefault();
       }
     },
-    { passive: false }
+    { passive: false },
   );
 
   modalImage.addEventListener(
@@ -128,6 +130,25 @@ function initPortfolioLightbox() {
         showImageByIndex(currentIndex + 1);
       }
     },
-    { passive: true }
+    { passive: true },
   );
+}
+
+function initRevealOnScroll() {
+  const els = document.querySelectorAll(".reveal");
+  if (!els.length) return;
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    { threshold: 0.15 },
+  );
+
+  els.forEach((el) => io.observe(el));
 }

@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Contact | Bomb City Photo Booth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="/assets/icons/BCPB_orange.png" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -25,9 +27,10 @@
     <div id="header" class="sticky-top"></div>
 
     <!-- ================= PAGE HERO ================= -->
-    <section class="section-padding text-center">
+    <section class="hero hero-contact section-padding text-center">
+      <div class="hero-overlay"></div>
       <div class="container">
-        <h1 class="mb-3">Contact & Booking</h1>
+        <h1 class="mb-3">Contact</h1>
         <p class="text-muted-custom mb-0">
           Tell us about your event and we'll get back to you as soon as
           possible.
@@ -40,8 +43,8 @@
       <div class="container">
         <div class="row g-4 align-items-center">
           <!-- Left: Contact Options / Marketing -->
-          <div class="col-lg-5">
-            <div class="card card-brand card-pad h-100">
+          <div class="col-lg-5 order-2 order-md-1">
+            <div class="card card-brand card-contact card-pad h-100">
               <h2 class="h4 mb-3">Get in Touch</h2>
               <p class="text-muted-custom mb-4">
                 Prefer to reach out directly? Use any of the options below.
@@ -84,7 +87,7 @@
                   rel="noopener"
                   aria-label="Bomb City Photo Booth on Facebook"
                 >
-                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-facebook icon-brand"></i>
                 </a>
 
                 <a
@@ -94,7 +97,7 @@
                   rel="noopener"
                   aria-label="Bomb City Photo Booth on Instagram"
                 >
-                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-instagram icon-brand"></i>
                 </a>
 
                 <a
@@ -104,14 +107,9 @@
                   rel="noopener"
                   aria-label="Bomb City Photo Booth portfolio on Pixieset"
                 >
-                  <i class="bi bi-camera"></i>
+                  <i class="bi bi-camera icon-brand"></i>
                 </a>
               </div>
-
-              <p class="text-muted-custom mt-3 mb-0">
-                Want to see more work? Visit our
-                <a href="/portfolio.html">Portfolio</a>.
-              </p>
 
               <hr class="my-4" />
 
@@ -125,7 +123,7 @@
           </div>
 
           <!-- Right: Netlify Form -->
-          <div class="col-lg-7">
+          <div class="col-lg-7 order-1 order-md-2">
             <div class="card card-brand p-4 p-md-5">
               <h2 class="h4 mb-3">Request a Quote</h2>
               <p class="text-muted-custom mb-4">
@@ -139,6 +137,7 @@
                 method="POST"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
+                action="/thank-you.html"
               >
                 <!-- required hidden input -->
                 <input type="hidden" name="form-name" value="contact" />
@@ -230,7 +229,7 @@
                       name="message"
                       class="form-control"
                       rows="5"
-                      placeholder="Tell us what you're looking for (hours, add-ons, guest count, etc.)"
+                      placeholder="Tell us what you're looking for (hours, add-ons, guest count, etc.) or simply ask for help choosing."
                     ></textarea>
                   </div>
 
@@ -245,16 +244,6 @@
                   </div>
                 </div>
               </form>
-
-              <!-- Marketing Buttons -->
-              <div class="text-center mt-4">
-                <a href="/packages.html" class="btn btn-outline-brand me-2">
-                  View Packages
-                </a>
-                <a href="/addons.html" class="btn btn-outline-brand">
-                  View Add-Ons
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -266,8 +255,8 @@
       <div class="container">
         <h2 class="mb-3">Need help choosing?</h2>
         <p class="text-muted-custom mb-4">
-          Not sure what add-ons you need? We'll recommend the best setup for
-          your event size and vibe.
+          Not sure what package or add-ons you need? We'll recommend the best
+          setup for your event size and vibe.
         </p>
         <a href="/packages.html" class="btn btn-brand btn-lg"
           >Explore Packages</a

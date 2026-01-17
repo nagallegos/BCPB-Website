@@ -1,13 +1,24 @@
 /* ================= THEME COLORS ================= */
 @use "sass:color";
 
+// Base font size (Bootstrap default is 1rem = 16px)
+$font-size-base: 1rem;
+
+// Heading scale (desktop-first)
+$h1-size: 2.8rem;
+$h2-size: 2.5rem;
+$h3-size: 2rem;
+$h4-size: 1.8rem;
+$h5-size: 1.4rem;
+$h6-size: 1.2rem;
+
 /* Backgrounds */
 $bg-main: #fafafa;
-$bg-alt: #ffffff;
 $bg-accent: #18181b; // Soft black (not pure black)
+$bg-alt: $bg-accent;
 
 /* Brand / Components */
-$color-brand: #f97316; // Warm orange
+$color-brand: #ff8a1f; // Warm orange
 $color-brand-hover: color.adjust($color-brand, $lightness: -10%);
 $color-brand-dark: color.adjust($color-brand, $lightness: -15%);
 $color-brand-darker: color.adjust($color-brand-dark, $lightness: -15%);
@@ -15,7 +26,8 @@ $color-brand-darker: color.adjust($color-brand-dark, $lightness: -15%);
 /* Text */
 $text-dark: #18181b;
 $text-light: #fafafa;
-$text-muted: #71717a;
+$text-muted-dark: #2b2b2b;
+$text-muted-light: #d0d0d8;
 
 /* Bootstrap overrides */
 $body-bg: $bg-main;

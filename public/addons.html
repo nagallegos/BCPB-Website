@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Add-Ons | Bomb City Photo Booth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="/assets/icons/BCPB_orange.png" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -26,8 +28,9 @@
     <div id="header" class="sticky-top"></div>
 
     <!-- ================= PAGE HERO ================= -->
-    <section class="section-padding text-center">
-      <div class="container">
+    <section class="hero hero-addons section-padding text-center">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
         <h1 class="mb-3">Photo Booth Add-Ons</h1>
         <p class="lead text-muted-custom mb-0">
           Customize your photo booth experience with optional upgrades that make
@@ -41,7 +44,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <div class="card card-brand card-pad text-center">
+            <div class="card card-brand card-animate card-pad text-center">
               <h2 class="mb-2">Customize Your Photo Booth</h2>
               <p class="lead text-muted-custom mb-4">
                 Start with our professional base rental, then enhance your
@@ -51,46 +54,14 @@
               <div class="mb-4">
                 <div class="text-muted-custom">Base Rental</div>
                 <div class="display-5 fw-bold">$400</div>
-                <div class="text-muted-custom">Starting price · 3 hours</div>
+                <div class="text-muted-custom mb-2">Starting price</div>
+                <div class="text-muted-custom">Includes 3 hours</div>
               </div>
-
-              <div class="row g-3 text-start">
-                <div class="col-md-6">
-                  <div class="card card-brand card-pad h-100">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="bi bi-camera icon-brand"></i>
-                      <span class="fw-semibold">DSLR photo booth</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card card-brand card-pad h-100">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="bi bi-lightning-charge icon-brand"></i>
-                      <span class="fw-semibold">Studio lighting</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card card-brand card-pad h-100">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="bi bi-person-check icon-brand"></i>
-                      <span class="fw-semibold">On-site attendant</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card card-brand card-pad h-100">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="bi bi-cloud-arrow-down icon-brand"></i>
-                      <span class="fw-semibold">Digital gallery delivery</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <a href="/contact.html" class="btn btn-brand btn-lg mt-4">
-                Book Base Rental
+              <a
+                href="/index.html/#base-rental"
+                class="btn btn-brand btn-lg mt-4"
+              >
+                View Base Rental
               </a>
             </div>
           </div>
@@ -107,17 +78,200 @@
         </p>
 
         <div class="row g-4 text-start">
-          <!-- Unlimited Prints -->
-          <div class="col-md-6">
-            <div class="card card-brand card-pad h-100">
+          <!-- ================= INCLUDED WITH BASE RENTAL ================= -->
+
+          <!-- Backdrop (Included) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-aspect-ratio icon-brand me-2"></i>Backdrop
+              </h3>
+              <p class="text-muted-light mb-3">
+                A clean, professional backdrop included with every rental.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>Standard backdrop setup</li>
+                <li>Helps keep photos consistent and polished</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-5 fw-bold">Included</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Capture Modes (Included) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-camera icon-brand me-2"></i>Capture Modes
+              </h3>
+              <p class="text-muted-light mb-3">
+                Multiple ways to capture the moment—great for guests and social
+                sharing.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>Still photos</li>
+                <li>Boomerangs</li>
+                <li>GIFs</li>
+                <li>Video</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-5 fw-bold">Included</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Props (Included) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-stars icon-brand me-2"></i>Props
+              </h3>
+              <p class="text-muted-light mb-3">
+                Fun props to help guests loosen up and create memorable photos.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>Standard prop selection included</li>
+                <li>Cleaned and organized for events</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-5 fw-bold">Included</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- On-Site Attendant / Setup / Lighting / Delivery (Included) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-tools icon-brand me-2"></i>Full-Service Setup
+              </h3>
+              <p class="text-muted-light mb-3">
+                We handle everything so you can enjoy the event.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>On-site attendant</li>
+                <li>Setup &amp; tear down</li>
+                <li>Professional lighting</li>
+                <li>Delivery within 40 miles</li>
+                <li>Digital sharing during event</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-5 fw-bold">Included</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post Event Gallery (Included) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-cloud-arrow-down icon-brand me-2"></i>Post-Event
+                Digital Gallery
+              </h3>
+              <p class="text-muted-light mb-3">
+                Your private Pixieset gallery delivered after the event for the
+                host.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>Private client-only gallery</li>
+                <li>Host receives digital copies</li>
+                <li>Optional media-use opt-in for portfolio highlights</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-5 fw-bold">Included</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= BRANDING / CUSTOMIZATION ================= -->
+
+          <!-- Custom/Branded Digital Frame/Overlay ($25) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-image icon-brand me-2"></i>Custom Digital Frame
+                / Overlay
+              </h3>
+              <p class="text-muted-light mb-3">
+                A custom overlay on the digital photo. If printing is included,
+                it will appear on printouts too.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>Custom colors + layout</li>
+                <li>Event name/date or branding</li>
+                <li>Includes custom idle screen</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-4 fw-bold">$25</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom/Branded Idle Screen ($25) - Included with overlay -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
+              <h3 class="h5 mb-2">
+                <i class="bi bi-display icon-brand me-2"></i>Custom / Branded
+                Idle Screen
+              </h3>
+              <p class="text-muted-light mb-3">
+                Display a branded or themed screen when the booth is not in use.
+              </p>
+              <ul class="feature-list mb-4">
+                <li>Event name or logo</li>
+                <li>Custom colors and layout</li>
+                <li>Included with Digital Frame / Overlay</li>
+              </ul>
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+              >
+                <div class="fs-5 fw-bold">Included w/ Overlay</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= OUTPUT UPGRADE ================= -->
+
+          <!-- Unlimited Prints (keep your description) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
               <h3 class="h5 mb-2">
                 <i class="bi bi-printer icon-brand me-2"></i>Unlimited Prints
               </h3>
-              <p class="text-muted-custom mb-3">
+              <p class="text-muted-light mb-3">
                 Give your guests physical keepsakes they can take home the same
                 night.
               </p>
-              <ul class="mb-4">
+              <ul class="feature-list mb-4">
                 <li>High-quality dye-sublimation prints</li>
                 <li>Multiple prints per session</li>
                 <li>Custom-designed template</li>
@@ -126,135 +280,85 @@
                 class="d-flex justify-content-between align-items-center flex-wrap gap-2"
               >
                 <div class="fs-4 fw-bold">$150</div>
-                <a href="/contact.html" class="btn btn-outline-brand">
-                  Add to Booking
-                </a>
               </div>
             </div>
           </div>
 
-          <!-- Custom Backdrop -->
-          <div class="col-md-6">
-            <div class="card card-brand card-pad h-100">
+          <!-- ================= TIME ================= -->
+
+          <!-- Additional Hour ($100) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
               <h3 class="h5 mb-2">
-                <i class="bi bi-aspect-ratio icon-brand me-2"></i>Custom
-                Backdrop
+                <i class="bi bi-clock icon-brand me-2"></i>Additional Hour
               </h3>
-              <p class="text-muted-custom mb-3">
-                Match your event theme with a professionally styled backdrop.
+              <p class="text-muted-light mb-3">
+                Need more time for the party? Add extra hours to keep the booth
+                running.
               </p>
-              <ul class="mb-4">
-                <li>Solid color or themed design</li>
-                <li>Clean, wrinkle-free setup</li>
+              <ul class="feature-list mb-4">
+                <li>Add time to match your schedule</li>
+                <li>Great for weddings + corporate events</li>
               </ul>
               <div
                 class="d-flex justify-content-between align-items-center flex-wrap gap-2"
               >
-                <div class="fs-4 fw-bold">$75</div>
-                <a href="/contact.html" class="btn btn-outline-brand">
-                  Add to Booking
-                </a>
+                <div class="fs-4 fw-bold">$100</div>
               </div>
             </div>
           </div>
 
-          <!-- Premium Props -->
-          <div class="col-md-6">
-            <div class="card card-brand card-pad h-100">
+          <!-- ================= CUSTOM QUOTE ================= -->
+
+          <!-- Custom Backdrop / Props (Custom Quote) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
               <h3 class="h5 mb-2">
-                <i class="bi bi-stars icon-brand me-2"></i>Premium Props
+                <i class="bi bi-paint-bucket icon-brand me-2"></i>Custom
+                Backdrop or Props
               </h3>
-              <p class="text-muted-custom mb-3">
-                Upgrade from standard props to a curated collection tailored to
-                your event.
+              <p class="text-muted-light mb-3">
+                Want something truly unique? We can create custom options upon
+                request.
               </p>
-              <ul class="mb-4">
-                <li>Themed and high-quality props</li>
-                <li>Cleaned and organized display</li>
+              <ul class="feature-list mb-4">
+                <li>Quoted based on materials + time</li>
+                <li>Perfect for branded corporate events</li>
+                <li>Great for themed weddings and parties</li>
               </ul>
               <div
                 class="d-flex justify-content-between align-items-center flex-wrap gap-2"
               >
-                <div class="fs-4 fw-bold">$50</div>
-                <a href="/contact.html" class="btn btn-outline-brand">
-                  Add to Booking
-                </a>
+                <div class="fs-5 fw-bold">Custom Quote</div>
               </div>
             </div>
           </div>
 
-          <!-- GIF / Boomerang -->
-          <div class="col-md-6">
-            <div class="card card-brand card-pad h-100">
+          <!-- (Optional) Booth / DSLR / Lighting (Included) — if you want it explicit as its own card -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card card-brand card-animate card-addon card-pad h-100 d-flex justify-content-center"
+            >
               <h3 class="h5 mb-2">
-                <i class="bi bi-images icon-brand me-2"></i>GIF &amp; Boomerang
-                Mode
+                <i class="bi bi-camera2 icon-brand me-2"></i>Pro Camera +
+                Lighting
               </h3>
-              <p class="text-muted-custom mb-3">
-                Add motion and fun with animated capture modes perfect for
-                social sharing.
+              <p class="text-muted-light mb-3">
+                High-quality images with consistent lighting for every guest.
               </p>
-              <ul class="mb-4">
-                <li>GIF loops</li>
-                <li>Boomerangs</li>
-                <li>Instant digital sharing</li>
+              <ul class="feature-list mb-4">
+                <li>DSLR camera included</li>
+                <li>Professional lighting included</li>
+                <li>Optimized for indoor/outdoor venues</li>
               </ul>
               <div
                 class="d-flex justify-content-between align-items-center flex-wrap gap-2"
               >
-                <div class="fs-4 fw-bold">$50</div>
-                <a href="/contact.html" class="btn btn-outline-brand">
-                  Add to Booking
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Mode -->
-          <div class="col-md-6">
-            <div class="card card-brand card-pad h-100">
-              <h3 class="h5 mb-2">
-                <i class="bi bi-camera-video icon-brand me-2"></i>Video Mode
-              </h3>
-              <p class="text-muted-custom mb-3">
-                Capture moments in motion with short video clips from your
-                event.
-              </p>
-              <ul class="mb-4">
-                <li>Short video recordings</li>
-                <li>Digital delivery after event</li>
-              </ul>
-              <div
-                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
-              >
-                <div class="fs-4 fw-bold">$75</div>
-                <a href="/contact.html" class="btn btn-outline-brand">
-                  Add to Booking
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Custom Idle Screen -->
-          <div class="col-md-6">
-            <div class="card card-brand card-pad h-100">
-              <h3 class="h5 mb-2">
-                <i class="bi bi-display icon-brand me-2"></i>Custom Idle Screen
-              </h3>
-              <p class="text-muted-custom mb-3">
-                Display a branded or themed screen when the booth is not in use.
-              </p>
-              <ul class="mb-4">
-                <li>Event name or logo</li>
-                <li>Custom colors and layout</li>
-              </ul>
-              <div
-                class="d-flex justify-content-between align-items-center flex-wrap gap-2"
-              >
-                <div class="fs-4 fw-bold">$40</div>
-                <a href="/contact.html" class="btn btn-outline-brand">
-                  Add to Booking
-                </a>
+                <div class="fs-5 fw-bold">Included</div>
               </div>
             </div>
           </div>
@@ -263,7 +367,7 @@
     </section>
 
     <!-- ================= CTA ================= -->
-    <section class="section-padding bg-alt text-center">
+    <section class="section-padding text-center">
       <div class="container">
         <h2 class="mb-3">Ready to Customize?</h2>
         <p class="text-muted-custom mb-4">

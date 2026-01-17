@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "sass:color";
 
 .bg-brand {
   background-color: $bg-accent;
@@ -6,7 +7,10 @@
 }
 
 .bg-alt {
-  background-color: $bg-alt;
+  background-color: $bg-accent;
+  h2 {
+    color: $color-brand;
+  }
 }
 
 .logo-circle {
@@ -31,10 +35,10 @@
 }
 
 .navbar .nav-link {
-  color: $text-light;
+  color: $color-brand;
 
   &:hover {
-    color: $color-brand;
+    color: $color-brand-dark;
   }
 }
 
@@ -42,4 +46,100 @@
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 6px;
+}
+
+$brand-orange-encoded: "%23ff8a1f";
+
+.navbar .navbar-toggler {
+  border-color: $color-brand;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#{$brand-orange-encoded}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $text-light;
+}
+
+.hero-home {
+  background-image: url("/assets/images/hero/home.jpg");
+}
+
+.hero-addons {
+  background-image: url("/assets/images/booth/booth-photo1.jpeg");
+}
+
+.hero-contact {
+  background-image: url("/assets/icons/bg_logo_orange.png");
+}
+
+.hero-portfolio {
+  background-image: url("/assets/images/portfolio/portfolio-hero.jpg");
+}
+
+/* Overlay layer */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); // adjust darkness here
+  z-index: 1;
+}
+
+/* Ensure content sits above overlay */
+.hero .container {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding: 4rem 1rem;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.reveal {
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.card-animate {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.card-animate:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
 }

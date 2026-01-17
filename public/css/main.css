@@ -9,20 +9,16 @@ body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3 {
-  letter-spacing: -0.02em;
-}
-
 .section-padding {
   padding: 4rem 0;
 }
 
-.text-muted-custom {
-  color: #71717a;
+.text-muted-light {
+  color: #d0d0d8;
+}
+
+.text-muted-dark {
+  color: #2b2b2b;
 }
 
 .logo-circle {
@@ -30,42 +26,144 @@ h3,
   height: 42px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #18181b;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .logo-circle img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-circle-footer {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #18181b;
+}
+.logo-circle-footer img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 /* Buttons */
 .btn.btn-brand {
-  background-color: #f97316;
+  background-color: #ff8a1f;
   color: black;
   border: none;
 }
 .btn.btn-brand:hover {
-  background-color: rgb(214.4769874477, 91.129707113, 5.5230125523);
+  background-color: rgb(235, 112.2544642857, 0);
   color: #fafafa;
 }
 
 .btn.btn-outline-brand {
   background: transparent;
-  border: 2px solid #f97316;
-  color: #f97316;
+  border: 2px solid #ff8a1f;
+  color: #ff8a1f;
 }
 .btn.btn-outline-brand:hover {
-  background-color: #f97316;
+  background-color: #ff8a1f;
   color: #fafafa;
 }
 
 /* Cards */
 .card.card-brand {
-  border: none;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 3px;
+  border-style: solid;
+  border-color: #ff8a1f;
+  background-color: #fafafa;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card.card-brand.card-base {
+  background-color: white;
+  color: #18181b;
+}
+.card.card-brand.card-base .icon-brand {
+  color: #18181b;
+}
+.card.card-brand.card-base .feature-list li {
+  border-color: #18181b;
+}
+.card.card-brand.card-base {
+  border-color: #ff8a1f;
+  border-width: 4px;
+}
+.card.card-brand.card-base h2, .card.card-brand.card-base .h2 {
+  color: #18181b;
+}
+.card.card-brand.card-std {
+  background-color: #18181b;
+  color: #fafafa;
+}
+.card.card-brand.card-std .icon-brand {
+  color: #fafafa;
+}
+.card.card-brand.card-std .feature-list li {
+  border-color: #fafafa;
+}
+.card.card-brand.card-std {
+  border-color: #ff8a1f;
+}
+.card.card-brand.card-print {
+  background-color: #ff8a1f;
+  color: #18181b;
+}
+.card.card-brand.card-print .icon-brand {
+  color: #18181b;
+}
+.card.card-brand.card-print .feature-list li {
+  border-color: #18181b;
+}
+.card.card-brand.card-print {
+  border-color: #fafafa;
+}
+.card.card-brand.card-stacked {
+  background-color: #ff8a1f;
+  color: #18181b;
+}
+.card.card-brand.card-stacked .icon-brand {
+  color: #18181b;
+}
+.card.card-brand.card-stacked .feature-list li {
+  border-color: #18181b;
+}
+.card.card-brand.card-stacked {
+  border-color: #18181b;
+}
+.card.card-brand.card-addon {
+  background-color: #18181b;
+  color: #fafafa;
+}
+.card.card-brand.card-addon .icon-brand {
+  color: #fafafa;
+}
+.card.card-brand.card-addon .feature-list li {
+  border-color: #fafafa;
+}
+.card.card-brand.card-addon {
+  border-color: #ff8a1f;
+}
+.card.card-brand.card-contact {
+  background-color: #ff8a1f;
+  color: #18181b;
+}
+.card.card-brand.card-contact .icon-brand {
+  color: #18181b;
+}
+.card.card-brand.card-contact {
+  border-color: #fafafa;
+}
+.card.card-brand .btn.btn-outline-brand {
+  border-color: #18181b;
+  color: #18181b;
+}
+.card.card-brand h2, .card.card-brand .h2 {
+  color: #18181b;
 }
 
 .card-pad {
@@ -94,7 +192,7 @@ h3,
 .base-price .price {
   font-size: 3rem;
   font-weight: 700;
-  color: #f97316;
+  color: #ff8a1f;
 }
 .base-price .subtext {
   display: block;
@@ -122,12 +220,12 @@ h3,
   gap: 0.75rem;
 }
 .addon-item h2 i, .addon-item .h2 i {
-  color: #f97316;
+  color: #ff8a1f;
   font-size: 1.4rem;
 }
 
 .addon-item {
-  background-color: #ffffff;
+  background-color: #18181b;
   border-radius: 0.75rem;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -142,7 +240,7 @@ h3,
 .addon-item .addon-price {
   font-weight: 600;
   font-size: 1.25rem;
-  color: #f97316;
+  color: #ff8a1f;
 }
 
 .feature-list {
@@ -152,21 +250,28 @@ h3,
 }
 .feature-list li {
   margin-bottom: 0.5rem;
+  border-width: 0px 0px 1px 0;
+  border-color: #18181b;
+  border-style: solid;
 }
 
 .icon-brand {
-  color: #f97316;
+  color: #ff8a1f;
 }
 
 .icon-brand-alt1 {
-  color: rgb(189.6171548117, 80.5669456067, 4.8828451883);
+  color: rgb(209.5, 100.0736607143, 0);
 }
 
 .icon-brand-alt2 {
-  color: rgb(115.0376569038, 48.8786610879, 2.9623430962);
+  color: rgb(133, 63.53125, 0);
 }
 
 /* Portfolio */
+.section-portfolio-highlight {
+  background-color: #18181b;
+}
+
 .portfolio-thumb {
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -209,15 +314,15 @@ h3,
   width: 44px;
   height: 44px;
   border-radius: 999px;
-  border: 2px solid #f97316;
-  color: #f97316;
+  border: 2px solid #ff8a1f;
+  color: #ff8a1f;
   text-decoration: none;
   font-size: 1.25rem;
   transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 .social-link:hover {
   transform: translateY(-2px);
-  background-color: #f97316;
+  background-color: #ff8a1f;
   color: #fafafa;
 }
 
@@ -227,7 +332,10 @@ h3,
 }
 
 .bg-alt {
-  background-color: #ffffff;
+  background-color: #18181b;
+}
+.bg-alt h2, .bg-alt .h2 {
+  color: #ff8a1f;
 }
 
 .logo-circle {
@@ -235,7 +343,7 @@ h3,
   height: 42px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #18181b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,20 +355,126 @@ h3,
 }
 
 .navbar .nav-title {
-  color: #f97316;
+  color: #ff8a1f;
 }
 
 .navbar .nav-link {
-  color: #fafafa;
+  color: #ff8a1f;
 }
 .navbar .nav-link:hover {
-  color: #f97316;
+  color: rgb(209.5, 100.0736607143, 0);
 }
 
 .navbar .nav-link.active {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 6px;
+}
+
+.navbar .navbar-toggler {
+  border-color: #ff8a1f;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ff8a1f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fafafa;
+}
+
+.hero-home {
+  background-image: url("/assets/images/hero/home.jpg");
+}
+
+.hero-addons {
+  background-image: url("/assets/images/booth/booth-photo1.jpeg");
+}
+
+.hero-contact {
+  background-image: url("/assets/icons/bg_logo_orange.png");
+}
+
+.hero-portfolio {
+  background-image: url("/assets/images/portfolio/portfolio-hero.jpg");
+}
+
+/* Overlay layer */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* Ensure content sits above overlay */
+.hero .container {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding: 4rem 1rem;
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+.reveal {
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.card-animate {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.card-animate:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+body h1, body .h1 {
+  font-size: 2.8rem;
+}
+body h2, body .h2 {
+  font-size: 2.5rem;
+}
+body h3, body .h3 {
+  font-size: 2rem;
+}
+body h4, body .h4 {
+  font-size: 1.8rem;
+}
+body h5, body .h5 {
+  font-size: 1.4rem;
+}
+body h6, body .h6 {
+  font-size: 1.2rem;
 }
 
 /* ================= BOOTSTRAP ================= */
