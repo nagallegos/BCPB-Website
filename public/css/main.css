@@ -454,8 +454,15 @@ textarea.form-control {
   background-image: url("/assets/images/booth/booth-photo1.jpeg");
 }
 
-.hero-contact {
+.hero-contact::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
   background-image: url("/assets/icons/bg_logo_orange.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(16px);
+  z-index: 0;
 }
 
 .hero-portfolio {
