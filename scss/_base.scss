@@ -6,10 +6,34 @@ body {
     system-ui,
     -apple-system,
     sans-serif;
+  background:
+    radial-gradient(circle at top, rgba($color-brand, 0.08), transparent 32%),
+    $bg-main;
+  color: $text-dark;
+  line-height: 1.6;
 }
 
 .section-padding {
-  padding: 4rem 0;
+  padding: clamp(4rem, 6vw, 5.5rem) 0;
+}
+
+.page-hero {
+  background: linear-gradient(
+    180deg,
+    rgba($color-brand, 0.08) 0%,
+    rgba($bg-main, 0) 100%
+  );
+  border-bottom: 1px solid rgba($bg-accent, 0.08);
+}
+
+.section-intro {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-muted-custom {
+  color: $text-muted-dark;
 }
 
 .text-muted-light {
@@ -18,4 +42,10 @@ body {
 
 .text-muted-dark {
   color: $text-muted-dark;
+}
+
+.hero .text-muted-custom,
+.bg-alt .text-muted-custom,
+.bg-brand .text-muted-custom {
+  color: $text-muted-light;
 }
