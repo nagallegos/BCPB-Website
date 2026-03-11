@@ -95,7 +95,16 @@ $brand-orange-encoded: "%23ff8a1f";
 }
 
 .hero-contact {
-  background-image: url("/assets/icons/bg_logo_orange.png");
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    background-image: url("/assets/icons/bg_logo_orange.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(16px);
+    z-index: 0;
+  }
 }
 
 .hero-portfolio {
