@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Info Form | Bomb City Photo Booth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Share your event details with Bomb City Photo Booth so we can plan the right setup for your celebration."
+    />
+
+    <link rel="icon" type="image/png" href="/assets/icons/BCPB_orange.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div id="header" class="sticky-top"></div>
+
+    <section class="hero hero-info-form section-padding text-center">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <p class="eyebrow text-uppercase mb-3">Client Intake</p>
+        <h1 class="mb-3">Event Information Form</h1>
+        <p class="text-muted-custom info-form-lead mb-0 mx-auto">
+          This quick form gives us the details we need to recommend the right
+          photo booth setup, confirm logistics, and keep planning easy.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-alt">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4">
+            <div class="card card-brand card-contact card-pad h-100">
+              <p class="eyebrow text-uppercase mb-2">What to Expect</p>
+              <h2 class="h4 mb-3">A smoother booking conversation</h2>
+              <p class="text-muted-custom mb-4">
+                Once you submit this, we can follow up with availability,
+                pricing, and the best setup for your event.
+              </p>
+
+              <div class="info-form-note mb-4">
+                <strong class="d-block mb-2">Best for:</strong>
+                <ul class="info-checklist mb-0">
+                  <li>Weddings and receptions</li>
+                  <li>Corporate and school events</li>
+                  <li>Birthdays, parties, and private celebrations</li>
+                  <li>Any event that needs a custom quote</li>
+                </ul>
+              </div>
+
+              <h3 class="h6 mb-3">Helpful details to include</h3>
+              <ul class="info-checklist mb-4">
+                <li>Date, venue, and guest count</li>
+                <li>Indoor or outdoor setup notes</li>
+                <li>Any print or backdrop preferences</li>
+                <li>Anything unique about the event timeline</li>
+              </ul>
+
+              <div class="d-grid gap-3">
+                <a
+                  class="btn btn-outline-brand text-center"
+                  href="mailto:nick.gallegos@bombcityphotobooth.com"
+                >
+                  <i class="bi bi-envelope me-2"></i>Email Instead
+                </a>
+                <a
+                  class="btn btn-outline-brand text-center"
+                  href="sms:+18063165177?body=Hi%20Bomb%20City%20Photo%20Booth!%20I%27m%20working%20through%20the%20event%20info%20form%20and%20have%20a%20question."
+                >
+                  <i class="bi bi-chat-dots me-2"></i>Text a Question
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="card card-brand p-4 p-md-5 info-form-shell">
+              <div class="d-flex flex-column flex-md-row gap-3 mb-4">
+                <div class="info-form-badge">
+                  <i class="bi bi-calendar2-check"></i>
+                  <span>Starter intake form</span>
+                </div>
+                <p class="text-muted-custom mb-0">
+                  We can refine these questions anytime, but this page is ready
+                  to send now.
+                </p>
+              </div>
+
+              <form
+                name="event-info-intake"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you.html"
+              >
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="event-info-intake"
+                />
+                <input type="hidden" name="redirect" value="/thank-you.html" />
+
+                <p class="d-none">
+                  <label>
+                    Do not fill this out if you're human:
+                    <input name="bot-field" />
+                  </label>
+                </p>
+
+                <div class="info-form-section">
+                  <div class="form-section-heading">
+                    <span>01</span>
+                    <div>
+                      <h2 class="h5 mb-1">Contact information</h2>
+                      <p class="text-muted-custom mb-0">
+                        Who should we coordinate with?
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="client-name"
+                        >Full Name *</label
+                      >
+                      <input
+                        id="client-name"
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="client-email"
+                        >Email *</label
+                      >
+                      <input
+                        id="client-email"
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="client-phone"
+                        >Phone Number</label
+                      >
+                      <input
+                        id="client-phone"
+                        type="tel"
+                        name="phone"
+                        class="form-control"
+                        placeholder="(###) ###-####"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="best-contact-method"
+                        >Preferred Follow-Up</label
+                      >
+                      <select
+                        id="best-contact-method"
+                        name="preferred_contact_method"
+                        class="form-select"
+                      >
+                        <option value="">Select one</option>
+                        <option>Email</option>
+                        <option>Call</option>
+                        <option>Text</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-form-section">
+                  <div class="form-section-heading">
+                    <span>02</span>
+                    <div>
+                      <h2 class="h5 mb-1">Event details</h2>
+                      <p class="text-muted-custom mb-0">
+                        The basics that help us check fit and availability.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="event-name"
+                        >Event Name</label
+                      >
+                      <input
+                        id="event-name"
+                        type="text"
+                        name="event_name"
+                        class="form-control"
+                        placeholder="Smith Wedding, Spring Gala, etc."
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="event-type"
+                        >Event Type *</label
+                      >
+                      <select
+                        id="event-type"
+                        name="event_type"
+                        class="form-select"
+                        required
+                      >
+                        <option value="">Select one</option>
+                        <option>Wedding</option>
+                        <option>Birthday Party</option>
+                        <option>Corporate Event</option>
+                        <option>School Event</option>
+                        <option>Holiday Party</option>
+                        <option>Fundraiser</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label" for="event-date"
+                        >Event Date *</label
+                      >
+                      <input
+                        id="event-date"
+                        type="date"
+                        name="event_date"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label" for="event-start-time"
+                        >Approx. Start Time</label
+                      >
+                      <input
+                        id="event-start-time"
+                        type="time"
+                        name="event_start_time"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label" for="guest-count"
+                        >Estimated Guests</label
+                      >
+                      <input
+                        id="guest-count"
+                        type="number"
+                        min="0"
+                        name="guest_count"
+                        class="form-control"
+                        placeholder="150"
+                      />
+                    </div>
+
+                    <div class="col-md-8">
+                      <label class="form-label" for="venue-name"
+                        >Venue / Location *</label
+                      >
+                      <input
+                        id="venue-name"
+                        type="text"
+                        name="venue"
+                        class="form-control"
+                        placeholder="Venue name or private address"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label" for="event-city"
+                        >City *</label
+                      >
+                      <input
+                        id="event-city"
+                        type="text"
+                        name="event_city"
+                        class="form-control"
+                        placeholder="Amarillo"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="setup-environment"
+                        >Setup Type</label
+                      >
+                      <select
+                        id="setup-environment"
+                        name="setup_environment"
+                        class="form-select"
+                      >
+                        <option value="">Select one</option>
+                        <option>Indoor</option>
+                        <option>Outdoor</option>
+                        <option>Both / Not Sure Yet</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="venue-access"
+                        >Venue Access Notes</label
+                      >
+                      <input
+                        id="venue-access"
+                        type="text"
+                        name="venue_access"
+                        class="form-control"
+                        placeholder="Stairs, elevator, loading dock, etc."
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-form-section">
+                  <div class="form-section-heading">
+                    <span>03</span>
+                    <div>
+                      <h2 class="h5 mb-1">Booth preferences</h2>
+                      <p class="text-muted-custom mb-0">
+                        Anything you already know helps us tailor the quote.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="hours-needed"
+                        >Hours of Service</label
+                      >
+                      <input
+                        id="hours-needed"
+                        type="text"
+                        name="hours_needed"
+                        class="form-control"
+                        placeholder="Example: 3 hours"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="package-interest"
+                        >Package Interest</label
+                      >
+                      <select
+                        id="package-interest"
+                        name="package_interest"
+                        class="form-select"
+                      >
+                        <option value="">Select one</option>
+                        <option>Base Rental</option>
+                        <option>Not Sure Yet</option>
+                        <option>Need Recommendation</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="prints-needed"
+                        >Prints Needed?</label
+                      >
+                      <select
+                        id="prints-needed"
+                        name="prints_needed"
+                        class="form-select"
+                      >
+                        <option value="">Select one</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option>Maybe</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="backdrop-interest"
+                        >Backdrop Preference</label
+                      >
+                      <input
+                        id="backdrop-interest"
+                        type="text"
+                        name="backdrop_preference"
+                        class="form-control"
+                        placeholder="Color, style, branded step-and-repeat, etc."
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label" for="special-requests"
+                        >Special Requests or Must-Haves</label
+                      >
+                      <textarea
+                        id="special-requests"
+                        name="special_requests"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Share any print ideas, branding needs, timeline details, or questions."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-form-section mb-0">
+                  <div class="form-section-heading">
+                    <span>04</span>
+                    <div>
+                      <h2 class="h5 mb-1">Final notes</h2>
+                      <p class="text-muted-custom mb-0">
+                        Anything else we should know before we follow up?
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="form-label" for="additional-notes"
+                        >Additional Notes</label
+                      >
+                      <textarea
+                        id="additional-notes"
+                        name="additional_notes"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Add planner details, venue restrictions, preferred timeline, or anything else helpful."
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-brand btn-lg w-100">
+                        Send Event Details
+                      </button>
+                      <p class="text-muted-custom small mt-3 mb-0 text-center">
+                        Submissions go directly through the site form flow and
+                        can be expanded with more custom questions later.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding text-center">
+      <div class="container">
+        <h2 class="mb-3">Prefer a quicker first step?</h2>
+        <p class="text-muted-custom mb-4">
+          If someone is not ready for the full intake form yet, the standard
+          contact page is still available.
+        </p>
+        <a href="/contact.html" class="btn btn-outline-brand btn-lg"
+          >Go to Contact Page</a
+        >
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

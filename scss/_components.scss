@@ -331,3 +331,85 @@
     color: $text-light;
   }
 }
+
+.eyebrow {
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: $color-brand;
+}
+
+.info-form-lead {
+  max-width: 700px;
+}
+
+.info-form-shell {
+  position: relative;
+}
+
+.info-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  align-self: flex-start;
+  border: 1px solid rgba($color-brand, 0.35);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  background-color: rgba($color-brand, 0.08);
+  color: $bg-accent;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.info-form-note {
+  background: rgba($bg-main, 0.14);
+  border: 1px solid rgba($bg-main, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.info-checklist {
+  list-style: none;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+
+    &::before {
+      content: "\F26A";
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      color: currentColor;
+    }
+  }
+}
+
+.form-section-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+
+  span {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 999px;
+    background-color: $color-brand;
+    color: $bg-accent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+}
+
+.info-form-section {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba($bg-accent, 0.12);
+}

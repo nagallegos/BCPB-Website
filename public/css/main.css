@@ -326,6 +326,85 @@ body {
   color: #fafafa;
 }
 
+.eyebrow {
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ff8a1f;
+}
+
+.info-form-lead {
+  max-width: 700px;
+}
+
+.info-form-shell {
+  position: relative;
+}
+
+.info-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  align-self: flex-start;
+  border: 1px solid rgba(255, 138, 31, 0.35);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  background-color: rgba(255, 138, 31, 0.08);
+  color: #18181b;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.info-form-note {
+  background: rgba(250, 250, 250, 0.14);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.info-checklist {
+  list-style: none;
+  padding: 0;
+}
+.info-checklist li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.info-checklist li::before {
+  content: "\F26A";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: currentColor;
+}
+
+.form-section-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.form-section-heading span {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background-color: #ff8a1f;
+  color: #18181b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.info-form-section {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(24, 24, 27, 0.12);
+}
+
 .bg-brand {
   background-color: #18181b;
   color: #fafafa;
@@ -401,6 +480,11 @@ body {
 
 .hero-contact {
   background-image: url("/assets/icons/bg_logo_orange.png");
+}
+
+.hero-info-form {
+  background: linear-gradient(rgba(24, 24, 27, 0.78), rgba(24, 24, 27, 0.78)), radial-gradient(circle at top, rgba(255, 138, 31, 0.35), transparent 45%), url("/assets/images/booth/booth-photo1.jpeg");
+  background-position: center;
 }
 
 .hero-portfolio {

@@ -83,6 +83,14 @@ $brand-orange-encoded: "%23ff8a1f";
   background-image: url("/assets/icons/bg_logo_orange.png");
 }
 
+.hero-info-form {
+  background:
+    linear-gradient(rgba(24, 24, 27, 0.78), rgba(24, 24, 27, 0.78)),
+    radial-gradient(circle at top, rgba(255, 138, 31, 0.35), transparent 45%),
+    url("/assets/images/booth/booth-photo1.jpeg");
+  background-position: center;
+}
+
 .hero-portfolio {
   background-image: url("/assets/images/portfolio/portfolio-hero.jpg");
 }
