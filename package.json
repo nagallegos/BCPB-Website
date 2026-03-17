@@ -22,5 +22,8 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.91.0",
     "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.98.0"
   }
 }

@@ -2,12 +2,14 @@
 @use "sass:color";
 
 .bg-brand {
-  background-color: $bg-accent;
+  background: linear-gradient(180deg, #202025 0%, #111114 100%);
   color: $text-light;
 }
 
 .bg-alt {
-  background-color: $bg-accent;
+  background: linear-gradient(180deg, #202025 0%, #141418 100%);
+  color: $text-light;
+
   h2 {
     color: $color-brand;
   }
@@ -34,11 +36,23 @@
   color: $color-brand;
 }
 
+.navbar {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba($color-brand, 0.16);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
 .navbar .nav-link {
   color: $color-brand;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 
   &:hover {
     color: $color-brand-dark;
+    transform: translateY(-1px);
   }
 }
 
@@ -61,7 +75,7 @@ $brand-orange-encoded: "%23ff8a1f";
 
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 68vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +83,7 @@ $brand-orange-encoded: "%23ff8a1f";
   background-position: center;
   background-repeat: no-repeat;
   color: $text-light;
+  overflow: hidden;
 }
 
 .hero-home {
@@ -80,7 +95,16 @@ $brand-orange-encoded: "%23ff8a1f";
 }
 
 .hero-contact {
-  background-image: url("/assets/icons/bg_logo_orange.png");
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    background-image: url("/assets/icons/bg_logo_orange.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(16px);
+    z-index: 0;
+  }
 }
 
 .hero-info-form {
@@ -99,13 +123,20 @@ $brand-orange-encoded: "%23ff8a1f";
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7); // adjust darkness here
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.8) 100%),
+    radial-gradient(circle at top, rgba($color-brand, 0.18), transparent 38%);
   z-index: 1;
 }
 
 /* Ensure content sits above overlay */
 .hero .container {
+  max-width: 44rem;
   z-index: 2;
+}
+
+.hero h1 {
+  text-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
 @media (max-width: 768px) {
@@ -150,4 +181,42 @@ $brand-orange-encoded: "%23ff8a1f";
 .card-animate:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.site-footer {
+  border-top: 1px solid rgba($color-brand, 0.18);
+}
+
+.footer-brand {
+  color: $text-light;
+
+  &:hover {
+    color: $text-light;
+  }
+}
+
+.footer-heading {
+  color: $color-brand;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  li + li {
+    margin-top: 0.75rem;
+  }
+
+  li {
+    color: $text-muted-light;
+  }
+
+  a {
+    color: $text-muted-light;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-brand;
+    }
+  }
 }
