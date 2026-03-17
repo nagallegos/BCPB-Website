@@ -1,2 +1,6 @@
 Makefile
 node_modules/
+.env
+CONTEXT_HANDOFF.md
+# Local Netlify folder
+.netlify
