@@ -27,6 +27,10 @@ body {
   margin-right: auto;
 }
 
+a {
+  text-underline-offset: 0.18em;
+}
+
 .text-muted-custom {
   color: #2b2b2b;
 }
@@ -448,6 +452,85 @@ textarea.form-control {
   font-size: 2.5rem;
 }
 
+.feature-panel,
+.package-preview,
+.package-card,
+.mini-option,
+.step-card {
+  text-align: left;
+}
+
+.feature-panel-icon,
+.step-number,
+.contact-action-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 138, 31, 0.12);
+  color: #ff8a1f;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.package-label {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 138, 31, 0.1);
+  color: rgb(209.5, 100.0736607143, 0);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.package-preview-featured,
+.package-card-featured {
+  box-shadow: 0 24px 48px rgba(255, 138, 31, 0.14);
+}
+
+.step-number {
+  font-weight: 700;
+}
+
+.contact-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(24, 24, 27, 0.12);
+  background: rgba(250, 250, 250, 0.3);
+  color: #18181b;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+.contact-action strong,
+.contact-action small,
+.contact-action .small {
+  display: block;
+}
+.contact-action small, .contact-action .small {
+  color: #2b2b2b;
+}
+.contact-action:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 138, 31, 0.45);
+  background: rgba(250, 250, 250, 0.46);
+}
+
+.contact-note {
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background: rgba(250, 250, 250, 0.16);
+  border: 1px solid rgba(250, 250, 250, 0.16);
+}
+
 .bg-brand {
   background: linear-gradient(180deg, #202025 0%, #111114 100%);
   color: #fafafa;
@@ -512,6 +595,10 @@ textarea.form-control {
   box-shadow: none;
 }
 
+.nav-cta {
+  min-width: 9rem;
+}
+
 .hero {
   position: relative;
   min-height: 68vh;
@@ -571,10 +658,17 @@ textarea.form-control {
   text-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
+.hero-actions {
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: 60vh;
     padding: 4rem 1rem;
+  }
+  .navbar .navbar-collapse {
+    padding-top: 1rem;
   }
 }
 .reveal {

@@ -32,6 +32,10 @@ body {
   margin-right: auto;
 }
 
+a {
+  text-underline-offset: 0.18em;
+}
+
 .text-muted-custom {
   color: $text-muted-dark;
 }

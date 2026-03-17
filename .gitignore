@@ -2,5 +2,6 @@ Makefile
 node_modules/
 .env
 CONTEXT_HANDOFF.md
+book-app/
 # Local Netlify folder
 .netlify

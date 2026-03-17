@@ -97,26 +97,7 @@
                 </p>
               </div>
 
-              <form
-                name="event-info-intake"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                action="/thank-you.html"
-              >
-                <input
-                  type="hidden"
-                  name="form-name"
-                  value="event-info-intake"
-                />
-                <input type="hidden" name="redirect" value="/thank-you.html" />
-
-                <p class="d-none">
-                  <label>
-                    Do not fill this out if you're human:
-                    <input name="bot-field" />
-                  </label>
-                </p>
+              <form id="event-info-form">
 
                 <div class="info-form-section">
                   <div class="form-section-heading">
@@ -366,7 +347,9 @@
                         class="form-select"
                       >
                         <option value="">Select one</option>
-                        <option>Base Rental</option>
+                        <option>Digital Experience</option>
+                        <option>Printing Experience</option>
+                        <option>Custom Experience</option>
                         <option>Not Sure Yet</option>
                         <option>Need Recommendation</option>
                       </select>
@@ -442,12 +425,21 @@
                     </div>
 
                     <div class="col-12">
-                      <button type="submit" class="btn btn-brand btn-lg w-100">
+                      <div
+                        id="event-info-status"
+                        class="small text-center mb-3"
+                        aria-live="polite"
+                      ></div>
+                      <button
+                        id="event-info-submit"
+                        type="submit"
+                        class="btn btn-brand btn-lg w-100"
+                      >
                         Send Event Details
                       </button>
                       <p class="text-muted-custom small mt-3 mb-0 text-center">
-                        Submissions go directly through the site form flow and
-                        can be expanded with more custom questions later.
+                        Your submission can flow directly into your planning
+                        spreadsheet and be expanded later as your workflow grows.
                       </p>
                     </div>
                   </div>
@@ -476,5 +468,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/info-form.js"></script>
   </body>
 </html>
