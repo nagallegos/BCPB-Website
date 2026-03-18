@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("event-info-form");
   const submitButton = document.getElementById("event-info-submit");
   const status = document.getElementById("event-info-status");
+  const leadSource = document.getElementById("lead-source");
+  const leadSourceOtherWrap = document.getElementById("lead-source-other-wrap");
+  const leadSourceOther = document.getElementById("lead-source-other");
 
   if (!form || !submitButton || !status) return;
 
@@ -40,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ].filter(Boolean);
 
     return {
+      source: payload.lead_source || "website",
+      otherSourceDetail: payload.lead_source === "other" ? payload.lead_source_other || "" : "",
       name: payload.name || "",
       email: payload.email || "",
       phone: payload.phone || "",
@@ -52,6 +57,23 @@ document.addEventListener("DOMContentLoaded", () => {
       estimatedValue: 0,
       details: notes.join("\n"),
     };
+  }
+
+  function syncLeadSourceVisibility() {
+    if (!leadSource || !leadSourceOtherWrap || !leadSourceOther) return;
+
+    const shouldShow = leadSource.value === "other";
+    leadSourceOtherWrap.classList.toggle("d-none", !shouldShow);
+    leadSourceOther.required = shouldShow;
+
+    if (!shouldShow) {
+      leadSourceOther.value = "";
+    }
+  }
+
+  if (leadSource) {
+    leadSource.addEventListener("change", syncLeadSourceVisibility);
+    syncLeadSourceVisibility();
   }
 
   form.addEventListener("submit", async (event) => {
