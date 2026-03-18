@@ -123,6 +123,13 @@ $brand-orange-encoded: "%23ff8a1f";
   background-image: url("/assets/images/portfolio/portfolio-hero.jpg");
 }
 
+.hero-templates {
+  background:
+    linear-gradient(rgba(24, 24, 27, 0.78), rgba(24, 24, 27, 0.84)),
+    radial-gradient(circle at top, rgba(255, 138, 31, 0.26), transparent 46%),
+    linear-gradient(135deg, #322017 0%, #16161a 48%, #272730 100%);
+}
+
 /* Overlay layer */
 .hero-overlay {
   position: absolute;

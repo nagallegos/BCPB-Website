@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (callback) callback();
   };
 
-  loadPartial("#header", "/header.html");
+  loadPartial("#header", "/header.html", setActiveNavLink);
   loadPartial("#footer", "/footer.html", () => {
     const year = document.getElementById("year");
     if (year) year.textContent = new Date().getFullYear();
@@ -21,6 +21,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initRevealOnScroll();
 });
+
+function setActiveNavLink() {
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/index.html";
+  const navLinks = document.querySelectorAll("#header .nav-link");
+
+  navLinks.forEach((link) => {
+    const href = new URL(link.href, window.location.origin).pathname.replace(/\/$/, "") || "/index.html";
+    const isHome = currentPath === "/" && href === "/index.html";
+    const isMatch = href === currentPath || isHome;
+
+    link.classList.toggle("active", isMatch);
+    if (isMatch) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
 
 function initPortfolioLightbox() {
   const grid = document.getElementById("portfolioGrid");
