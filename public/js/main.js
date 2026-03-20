@@ -43,14 +43,6 @@ function applyConfiguredLinks(root = document) {
     if (!href) return;
 
     link.href = href;
-
-    if (link.dataset.configTarget) {
-      link.target = link.dataset.configTarget;
-    }
-
-    if (link.dataset.configRel) {
-      link.rel = link.dataset.configRel;
-    }
   });
 }
 
