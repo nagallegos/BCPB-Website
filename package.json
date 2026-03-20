@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:css": "sass scss/main.scss public/css/main.css",
+    "sync:templates": "node scripts/sync-template-catalog.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

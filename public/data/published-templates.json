@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-03-19T02:24:19.935Z",
+  "templateCount": 1,
+  "templates": [
+    {
+      "id": "quince-elegant-red-gold-v3",
+      "slug": "quince-elegant-red-gold-v3",
+      "title": "Elegant Red and Gold",
+      "category": "quinceanera",
+      "formats": [
+        "4x6",
+        "2x6"
+      ],
+      "style": "ornate",
+      "colors": [
+        "red",
+        "gold",
+        "black"
+      ],
+      "tags": [
+        "formal",
+        "sparkle",
+        "luxury",
+        "classic"
+      ],
+      "previewImage": "/templates/quinceanera/quince-elegant-red-gold-v3/card-preview.jpg",
+      "previewImages": [
+        "/templates/quinceanera/quince-elegant-red-gold-v3/card-preview.jpg",
+        "/templates/quinceanera/quince-elegant-red-gold-v3/full-preview-4x6.jpg",
+        "/templates/quinceanera/quince-elegant-red-gold-v3/full-preview-2x6.jpg",
+        "/templates/quinceanera/quince-elegant-red-gold-v3/quince-elegant-red-gold-v3_4x6.png",
+        "/templates/quinceanera/quince-elegant-red-gold-v3/quince-elegant-red-gold-v3_2x6.png"
+      ],
+      "description": "A formal quinceanera design with a rich red background, gold sparkle accents, and ornate scrolling details.",
+      "eventTypes": [
+        "quinceanera"
+      ],
+      "featured": true,
+      "referenceId": "",
+      "displayId": "",
+      "clientReferenceId": "",
+      "templateCode": "",
+      "catalogId": "",
+      "updatedAt": "2026-03-19"
+    }
+  ],
+  "syncedAt": "2026-03-19T02:24:30.746Z"
+}
