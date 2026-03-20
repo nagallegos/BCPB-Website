@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  applyConfiguredLinks();
-  initTemplateGalleryRedirect();
-
   // ---------- Partials ----------
   const loadPartial = async (selector, url, callback) => {
     const el = document.querySelector(selector);
@@ -13,12 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (callback) callback();
   };
 
-  loadPartial("#header", "/header.html", () => {
-    applyConfiguredLinks(document.querySelector("#header"));
-    setActiveNavLink();
-  });
+  loadPartial("#header", "/header.html", setActiveNavLink);
   loadPartial("#footer", "/footer.html", () => {
-    applyConfiguredLinks(document.querySelector("#footer"));
     const year = document.getElementById("year");
     if (year) year.textContent = new Date().getFullYear();
   });
@@ -29,46 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
   initRevealOnScroll();
 });
 
-function getSiteConfig() {
-  return window.SITE_CONFIG || {};
-}
-
-function applyConfiguredLinks(root = document) {
-  if (!root) return;
-
-  const config = getSiteConfig();
-  root.querySelectorAll("[data-config-link]").forEach((link) => {
-    const configKey = link.dataset.configLink;
-    const href = config[configKey];
-    if (!href) return;
-
-    link.href = href;
-  });
-}
-
-function initTemplateGalleryRedirect() {
-  const redirectKey = document.body?.dataset.redirectKey;
-  if (!redirectKey) return;
-
-  const destination = getSiteConfig()[redirectKey];
-  if (!destination) return;
-
-  window.location.replace(destination);
-}
-
 function setActiveNavLink() {
   const currentPath = window.location.pathname.replace(/\/$/, "") || "/index.html";
   const navLinks = document.querySelectorAll("#header .nav-link");
 
   navLinks.forEach((link) => {
-    const url = new URL(link.href, window.location.origin);
-    if (url.origin !== window.location.origin) {
-      link.classList.remove("active");
-      link.removeAttribute("aria-current");
-      return;
-    }
-
-    const href = url.pathname.replace(/\/$/, "") || "/index.html";
+    const href = new URL(link.href, window.location.origin).pathname.replace(/\/$/, "") || "/index.html";
     const isHome = currentPath === "/" && href === "/index.html";
     const isMatch = href === currentPath || isHome;
 

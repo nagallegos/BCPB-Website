@@ -13,11 +13,11 @@ through the submission logic.
 
 ## Template Gallery
 
-The public template gallery no longer lives in this repository.
+The public template gallery lives on the main website in `public/templates.html`.
 
-Website navigation now points visitors to the unified template app:
+The page reads its published catalog from the URL configured in:
 
-- `public/js/site-config.js` stores the current template app URL.
+- `public/js/site-config.js`
 
-The local `/templates.html` route is kept as a redirect so older links still
-land in the right place.
+Set `templateCatalogUrl` to the public S3 or CloudFront URL for your
+`published-templates.json` file.
