@@ -87,6 +87,7 @@ function syncTemplate(template) {
 
 function resolveSourceAsset(assetPath, category, slug) {
   const directCandidates = [];
+  const templateLibraryRoot = path.join(templatesRoot, "Template Library");
 
   if (typeof assetPath !== "string" || !assetPath.trim()) return null;
 
@@ -99,21 +100,21 @@ function resolveSourceAsset(assetPath, category, slug) {
   } else if (assetPath.startsWith("/templates/")) {
     directCandidates.push(
       path.join(
-        templatesRoot,
+        templateLibraryRoot,
         titleCase(category),
         slug,
         "web",
         path.basename(assetPath),
       ),
       path.join(
-        templatesRoot,
+        templateLibraryRoot,
         titleCase(category),
         slug,
         "print",
         path.basename(assetPath),
       ),
       path.join(
-        templatesRoot,
+        templateLibraryRoot,
         titleCase(category),
         slug,
         "source",
@@ -127,7 +128,7 @@ function resolveSourceAsset(assetPath, category, slug) {
   const existingDirect = directCandidates.find((candidate) => fs.existsSync(candidate));
   if (existingDirect) return existingDirect;
 
-  const templateDir = path.join(templatesRoot, titleCase(category), slug);
+  const templateDir = path.join(templateLibraryRoot, titleCase(category), slug);
   if (!fs.existsSync(templateDir)) {
     return null;
   }

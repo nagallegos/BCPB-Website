@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T10:24:28.806663+00:00",
+  "generatedAt": "2026-03-19T02:24:19.935Z",
   "templateCount": 1,
   "templates": [
     {
@@ -35,8 +35,14 @@
       "eventTypes": [
         "quinceanera"
       ],
-      "updatedAt": "2026-03-18"
+      "featured": true,
+      "referenceId": "",
+      "displayId": "",
+      "clientReferenceId": "",
+      "templateCode": "",
+      "catalogId": "",
+      "updatedAt": "2026-03-19"
     }
   ],
-  "syncedAt": "2026-03-18T10:33:39.342Z"
+  "syncedAt": "2026-03-19T02:24:30.746Z"
 }

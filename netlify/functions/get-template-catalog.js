@@ -8,6 +8,33 @@ const LOCAL_CATALOG_PATH = path.join(
   "published-templates.json",
 );
 
+function absolutizeUrl(value, baseUrl) {
+  if (typeof value !== "string" || !value.trim()) return value;
+
+  try {
+    return new URL(value, baseUrl).toString();
+  } catch {
+    return value;
+  }
+}
+
+function normalizeRemoteCatalog(payload, remoteCatalogUrl) {
+  const sourceUrl = new URL(remoteCatalogUrl);
+
+  return {
+    ...payload,
+    templates: Array.isArray(payload.templates)
+      ? payload.templates.map((template) => ({
+          ...template,
+          previewImage: absolutizeUrl(template.previewImage, sourceUrl),
+          previewImages: Array.isArray(template.previewImages)
+            ? template.previewImages.map((image) => absolutizeUrl(image, sourceUrl))
+            : [],
+        }))
+      : [],
+  };
+}
+
 exports.handler = async () => {
   try {
     const remoteCatalogUrl = process.env.TEMPLATE_CATALOG_URL;
@@ -23,7 +50,10 @@ exports.handler = async () => {
         );
       }
 
-      const payload = await response.json();
+      const payload = normalizeRemoteCatalog(
+        await response.json(),
+        remoteCatalogUrl,
+      );
 
       return {
         statusCode: 200,
