@@ -81,7 +81,7 @@ a {
 /* Buttons */
 .btn.btn-brand {
   background-color: #ff8a1f;
-  color: #18181b;
+  color: #fafafa;
   border: none;
   border-radius: 999px;
   box-shadow: 0 14px 28px rgba(255, 138, 31, 0.22);
@@ -373,7 +373,7 @@ a {
 .template-chip.is-active {
   background: #ff8a1f;
   border-color: #ff8a1f;
-  color: #18181b;
+  color: #fafafa;
   box-shadow: 0 12px 22px rgba(255, 138, 31, 0.24);
 }
 

@@ -35,7 +35,7 @@
 /* Buttons */
 .btn.btn-brand {
   background-color: $color-brand;
-  color: $bg-accent;
+  color: $text-light;
   border: none;
   border-radius: 999px;
   box-shadow: 0 14px 28px rgba($color-brand, 0.22);
@@ -380,7 +380,7 @@
   &.is-active {
     background: $color-brand;
     border-color: $color-brand;
-    color: $bg-accent;
+    color: $text-light;
     box-shadow: 0 12px 22px rgba($color-brand, 0.24);
   }
 }
