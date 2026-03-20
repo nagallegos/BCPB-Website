@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Photo Booth Templates | Bomb City Photo Booth</title>
+    <title>Templates | Bomb City Photo Booth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" type="image/png" href="/assets/icons/BCPB_orange.png" />
@@ -17,199 +17,40 @@
     />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body>
+  <body data-redirect-key="templateAppUrl">
     <div id="header" class="sticky-top"></div>
 
-    <section class="hero hero-templates section-padding text-center">
-      <div class="hero-overlay"></div>
+    <section class="section-padding text-center">
       <div class="container">
-        <p class="eyebrow text-uppercase mb-3">Template Catalog</p>
-        <h1 class="mb-3">Browse photo template styles by event and vibe</h1>
-        <p class="text-muted-custom section-intro mb-4">
-          Explore published print designs for weddings, quinceaneras, birthdays,
-          corporate events, and more. Browse by event type, search by mood or
-          color, and open any design for a closer look, complete with a
-          reference ID you can mention when you reach out.
-        </p>
-        <div class="template-summary text-start" id="templatesSummary">
-          <div class="template-stat">
-            <strong id="templateCountStat">0</strong>
-            <span>published templates</span>
-          </div>
-          <div class="template-stat">
-            <strong id="categoryCountStat">0</strong>
-            <span>event categories</span>
-          </div>
-          <div class="template-stat">
-            <strong id="formatCountStat">0</strong>
-            <span>available print formats</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding">
-      <div class="container">
-        <div class="card card-brand card-pad reveal">
-          <div class="templates-toolbar mb-4">
-            <label class="templates-search">
-              <i class="bi bi-search" aria-hidden="true"></i>
-              <input
-                id="templatesSearch"
-                class="form-control"
-                type="search"
-                placeholder="Search by title, colors, style, or tags"
-                aria-label="Search template catalog"
-              />
-            </label>
-
-            <div>
-              <label class="form-label" for="templatesFormatFilter">Format</label>
-              <select id="templatesFormatFilter" class="form-select">
-                <option value="all">All formats</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <p class="form-label mb-2">Event type</p>
-            <div class="template-filter-group" id="templatesCategoryFilters"></div>
-          </div>
-
-          <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center">
-            <p class="mb-0 text-muted-custom" id="templatesCount">
-              Loading published templates...
-            </p>
-            <a href="/info-form/" class="btn btn-outline-brand">
-              Ask About a Custom Version
+        <div class="card card-brand card-pad reveal mx-auto" style="max-width: 720px">
+          <p class="eyebrow text-uppercase mb-3">Template Gallery</p>
+          <h1 class="mb-3">The template gallery has moved</h1>
+          <p class="text-muted-custom section-intro mb-4">
+            Templates now live in the unified admin and gallery app. You should
+            be redirected automatically. If not, use the button below.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+            <a
+              href="#"
+              data-config-link="templateAppUrl"
+              data-config-target="_blank"
+              data-config-rel="noreferrer"
+              class="btn btn-brand btn-lg"
+            >
+              Open Template Gallery
+            </a>
+            <a href="/info-form/" class="btn btn-outline-brand btn-lg">
+              Start Your Inquiry
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-padding bg-alt">
-      <div class="container">
-        <div class="template-spotlight" id="templateSpotlight">
-          <div class="template-spotlight-media">
-            <img
-              id="spotlightImage"
-              src="/assets/images/portfolio/photo1.png"
-              alt="Featured template preview"
-            />
-          </div>
-          <div class="template-spotlight-copy">
-            <p class="eyebrow text-uppercase mb-2" id="spotlightEyebrow">Featured Match</p>
-            <h2 class="mb-3" id="spotlightTitle">Loading catalog...</h2>
-            <p class="text-muted-custom mb-3" id="spotlightDescription">
-              We’re pulling in the current published template catalog.
-            </p>
-            <p class="template-reference mb-3" id="spotlightReference"></p>
-            <div class="template-badges mb-3" id="spotlightBadges"></div>
-            <div class="template-meta mb-4" id="spotlightMeta"></div>
-            <div class="d-flex flex-column flex-sm-row gap-3">
-              <button
-                id="spotlightViewButton"
-                class="btn btn-brand"
-                type="button"
-                disabled
-              >
-                Open Preview
-              </button>
-              <a href="/contact.html" class="btn btn-outline-brand">
-                Ask for Recommendations
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-end gap-3 mb-4">
-          <div>
-            <p class="eyebrow text-uppercase mb-2">Published Designs</p>
-            <h2 class="mb-0">Templates organized by event type</h2>
-          </div>
-        </div>
-
-        <div class="row g-4" id="templatesGrid"></div>
-
-        <div class="template-empty mt-4 d-none" id="templatesEmpty">
-          <h3 class="h5 mb-2">No templates match those filters yet</h3>
-          <p class="text-muted-custom mb-0">
-            Try a different event type or search term, or contact us if you want
-            a custom design direction.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-padding bg-alt text-center">
-      <div class="container">
-        <h2 class="mb-3">Need a template tailored to your event?</h2>
-        <p class="text-muted-custom section-intro mb-4">
-          If you see a direction you like, we can adapt it. If you do not, we
-          can create something new around your colors, venue, guest count, and
-          print format.
-        </p>
-        <div class="hero-actions d-flex flex-column flex-sm-row gap-3 justify-content-center">
-          <a href="/info-form/" class="btn btn-brand btn-lg">Start Your Inquiry</a>
-          <a href="/packages.html" class="btn btn-outline-brand btn-lg">View Packages</a>
-        </div>
-      </div>
-    </section>
-
-    <div
-      class="modal fade"
-      id="templatePreviewModal"
-      tabindex="-1"
-      aria-labelledby="templatePreviewModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div>
-              <p class="eyebrow text-uppercase mb-1">Template Preview</p>
-              <h2 class="modal-title h4 mb-0" id="templatePreviewModalLabel">
-                Template details
-              </h2>
-            </div>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row g-4">
-              <div class="col-lg-8">
-                <div class="template-gallery-main mb-3">
-                  <img id="templateModalImage" src="" alt="" />
-                </div>
-                <div class="template-thumb-grid" id="templateModalThumbs"></div>
-              </div>
-              <div class="col-lg-4">
-                <div class="template-badges mb-3" id="templateModalBadges"></div>
-                <p class="text-muted-custom mb-3" id="templateModalDescription"></p>
-                <p class="template-reference mb-3" id="templateModalReference"></p>
-                <div class="template-meta mb-4" id="templateModalMeta"></div>
-                <a href="/info-form/" class="btn btn-brand w-100 mb-2">Ask for This Style</a>
-                <a href="/contact.html" class="btn btn-outline-brand w-100">Talk Through Options</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site-config.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/js/templates.js"></script>
   </body>
 </html>

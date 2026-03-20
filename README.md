@@ -11,14 +11,13 @@ The CRM endpoint URL is set on the form element with the
 `data-crm-intake-endpoint` attribute so it can be updated without digging
 through the submission logic.
 
-## Template Catalog Source
+## Template Gallery
 
-The public templates page can load its catalog in two ways:
+The public template gallery no longer lives in this repository.
 
-1. Production: set the Netlify environment variable `TEMPLATE_CATALOG_URL`
-   to the published JSON endpoint from the Template Admin App deployment.
-2. Local fallback: if that env var is not set, the site falls back to
-   `public/data/published-templates.json`.
+Website navigation now points visitors to the unified template app:
 
-The templates page calls `/.netlify/functions/get-template-catalog`, which
-proxies the remote catalog when configured.
+- `public/js/site-config.js` stores the current template app URL.
+
+The local `/templates.html` route is kept as a redirect so older links still
+land in the right place.
