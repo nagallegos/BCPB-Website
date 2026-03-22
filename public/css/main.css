@@ -834,6 +834,11 @@ textarea.form-control {
   padding: 0.9rem 0;
   border-bottom: 1px solid rgba(255, 138, 31, 0.16);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  --bs-navbar-color: #ff8a1f;
+  --bs-navbar-hover-color: rgb(209.5, 100.0736607143, 0);
+  --bs-navbar-active-color: #ff8a1f;
+  --bs-navbar-brand-color: #ff8a1f;
+  --bs-navbar-brand-hover-color: #ff8a1f;
 }
 
 .navbar .nav-link {

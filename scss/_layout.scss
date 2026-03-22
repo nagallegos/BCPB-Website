@@ -40,6 +40,11 @@
   padding: 0.9rem 0;
   border-bottom: 1px solid rgba($color-brand, 0.16);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  --bs-navbar-color: #{$color-brand};
+  --bs-navbar-hover-color: #{$color-brand-dark};
+  --bs-navbar-active-color: #{$color-brand};
+  --bs-navbar-brand-color: #{$color-brand};
+  --bs-navbar-brand-hover-color: #{$color-brand};
 }
 
 .navbar .nav-link {
