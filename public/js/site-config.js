@@ -1,4 +1,4 @@
 window.SITE_CONFIG = {
   templateCatalogUrl:
-    "https://bcpb-photo-bucket.s3.us-east-2.amazonaws.com/template-catalog/published-templates.json",
+    "https://d3r11bcq65pqz1.cloudfront.net/template-catalog/published-templates.json",
 };
