@@ -182,7 +182,7 @@ async function loadCatalog() {
 
   if (!configuredSource) {
     throw new Error(
-      "Set SITE_CONFIG.templateCatalogUrl in /public/js/site-config.js to your published S3 JSON URL.",
+      "Set SITE_CONFIG.templateCatalogUrl in /public/js/site-config.js to your published CloudFront catalog URL.",
     );
   }
 
@@ -399,6 +399,12 @@ function renderTemplateGroups(templates, grid, openTemplateModal) {
       );
       if (template) openTemplateModal(template);
     });
+  });
+
+  // Cards are rendered after the page-level reveal observer initializes, so
+  // we mark them visible immediately instead of leaving them transparent.
+  grid.querySelectorAll(".reveal").forEach((el) => {
+    el.classList.add("is-visible");
   });
 }
 

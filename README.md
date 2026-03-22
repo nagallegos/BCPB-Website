@@ -19,5 +19,5 @@ The page reads its published catalog from the URL configured in:
 
 - `public/js/site-config.js`
 
-Set `templateCatalogUrl` to the public S3 or CloudFront URL for your
-`published-templates.json` file.
+Set `templateCatalogUrl` to the public CloudFront URL for your
+`template-catalog/published-templates.json` file.

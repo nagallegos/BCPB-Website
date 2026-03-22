@@ -429,6 +429,11 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+.template-spotlight-copy .template-reference {
+  color: #fafafa;
+  background: rgba(255, 138, 31, 0.12);
+  border-color: rgba(255, 138, 31, 0.36);
+}
 
 .template-badges,
 .template-meta {
@@ -843,6 +848,7 @@ textarea.form-control {
 }
 
 .navbar .nav-link.active {
+  color: #ff8a1f;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 6px;
